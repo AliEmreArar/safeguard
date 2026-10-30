@@ -1,0 +1,26 @@
+{
+  "source_count": 10,
+  "max_api_requests": 10,
+  "reasoning": {
+    "effort": "low"
+  },
+  "max_retries": 0,
+  "concurrency": 4,
+  "settings": {
+    "source_limit": 10,
+    "model": "grok-4.7",
+    "concurrency": 4,
+    "timeout_seconds": 60.0,
+    "max_retries": 0,
+    "temperature": 0.7,
+    "max_output_tokens": 1800,
+    "seed": 42
+  },
+  "prompt_hash": "e0ee6628ed18245a0d8014f028ba5274ea95864ec09e9554591262f94848747c",
+  "prompt_version": "contrast-v2",
+  "dry_run": false,
+  "adult_variant_sources": [
+    "27098_2.jpg",
+    "27019_2.jpg"
+  ]
+}

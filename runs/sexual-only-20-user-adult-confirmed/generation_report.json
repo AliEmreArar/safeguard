@@ -1,0 +1,18 @@
+{
+  "records": 20,
+  "distinct_sources": 10,
+  "suggested_decisions": {
+    "block": 20
+  },
+  "concept": "sexual_objectification",
+  "adult_status": "user_confirmed_adult",
+  "adult_confirmation": "Kullanıcı: bu verilerin hepsi büyük yetişkin insanlara ait.",
+  "source_file_modified": false,
+  "api_requests_this_generation": 0,
+  "generation_method": "assistant_authored_local",
+  "guardrail_scoring_this_generation": false,
+  "training_performed": false,
+  "review_status": "pending",
+  "exact_duplicates": 0,
+  "changed_spans_verified": true
+}

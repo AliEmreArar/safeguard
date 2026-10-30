@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reid-synthetic-guardrail"
+version = "0.1.0"
+description = "Türkçe ReID moderasyon verisi için kontrollü sentez pilotu"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["reid_guardrail*"]
+
+[tool.setuptools.package-data]
+reid_guardrail = ["prompts/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: açıkça etkinleştirilen, ücretli xAI ağ testleri"]

@@ -1,0 +1,14 @@
+{
+  "report_detail_records": 142,
+  "report_age_groups": {
+    "unknown": 139,
+    "adult": 2,
+    "minor_or_mixed": 1
+  },
+  "selected_sources": 10,
+  "selected_adult_sources": 2,
+  "known_merged_holdout_overlap_excluded": 0,
+  "xlsx_fingerprint": "535d0e1e20fc6ea7885f9ee9e6441e66e0f1221c85366fe2dc0e240f46d107c6",
+  "all_experiment_only": true,
+  "note": "Excel'in split'i bilinmiyor; train olarak etiketlenmez. Model skorları gerçek etiket değildir. Kaynak dosya değiştirilmedi."
+}

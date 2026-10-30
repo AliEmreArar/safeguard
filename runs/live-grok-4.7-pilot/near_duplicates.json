@@ -1,0 +1,7 @@
+{
+  "threshold": 0.88,
+  "comparisons": 3486,
+  "truncated": false,
+  "pairs": [],
+  "note": "Karakter benzerliği taraması; semantik tekrar veya kişi düzeyi sızıntı kanıtı değildir. Çiftler beklenen benzerlik yaratabilir."
+}

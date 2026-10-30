@@ -1,0 +1,82 @@
+{
+  "model": {
+    "repository": "ytu-ce-cosmos/modernbert-tr-guardrail",
+    "revision": "b19585c4ae526f9539f7e3213f56624222c0526e"
+  },
+  "runtime": {
+    "torch": "2.10.0+cpu",
+    "transformers": "4.57.6",
+    "device": "cpu",
+    "attention_implementation": "eager",
+    "cpu_threads": 4
+  },
+  "id2label": {
+    "0": "unsafe",
+    "1": "VIOLENT_CRIMES",
+    "2": "NON_VIOLENT_CRIMES",
+    "3": "HATE_DISCRIMINATION",
+    "4": "HARASSMENT_OFFENSIVE",
+    "5": "SEXUAL_CONTENT_ADULT",
+    "6": "CSAE",
+    "7": "SELF_HARM_SUICIDE",
+    "8": "INJECTION_JAILBREAK",
+    "9": "MISINFORMATION_POLITICAL",
+    "10": "PRIVACY_VIOLATION"
+  },
+  "activation": "sigmoid",
+  "threshold_for_experiment": 0.5,
+  "training_performed": false,
+  "scoring_elapsed_seconds": 3.27,
+  "groups": {
+    "borderline_variant": {
+      "n": 2,
+      "unsafe_ge_0_5": 2,
+      "sexual_ge_0_5": 2,
+      "mean_unsafe": 0.8443785011768341,
+      "mean_sexual": 0.9954094290733337
+    },
+    "objectifying_variant": {
+      "n": 2,
+      "unsafe_ge_0_5": 2,
+      "sexual_ge_0_5": 2,
+      "mean_unsafe": 0.9989088177680969,
+      "mean_sexual": 0.9999830722808838
+    },
+    "original": {
+      "n": 10,
+      "unsafe_ge_0_5": 10,
+      "sexual_ge_0_5": 10,
+      "mean_unsafe": 0.944515985250473,
+      "mean_sexual": 0.9992337346076965
+    },
+    "safe_variant": {
+      "n": 10,
+      "unsafe_ge_0_5": 10,
+      "sexual_ge_0_5": 10,
+      "mean_unsafe": 0.9272533357143402,
+      "mean_sexual": 0.9990537285804748
+    },
+    "user_control_body_size": {
+      "n": 1,
+      "unsafe_ge_0_5": 1,
+      "sexual_ge_0_5": 1,
+      "mean_unsafe": 0.9999539852142334,
+      "mean_sexual": 0.9999994039535522
+    },
+    "user_control_metaphor": {
+      "n": 1,
+      "unsafe_ge_0_5": 1,
+      "sexual_ge_0_5": 1,
+      "mean_unsafe": 0.9996763467788696,
+      "mean_sexual": 0.9999972581863403
+    },
+    "user_control_tight_leggings": {
+      "n": 1,
+      "unsafe_ge_0_5": 1,
+      "sexual_ge_0_5": 1,
+      "mean_unsafe": 0.9988771080970764,
+      "mean_sexual": 0.9999964237213135
+    }
+  },
+  "note": "Rapor, yanlış pozitif olarak seçilmiş 10 kaynaktan oluşur; tarafsız test kümesi veya fine-tune sonrası başarı ölçümü değildir."
+}

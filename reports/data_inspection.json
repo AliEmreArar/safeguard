@@ -1,0 +1,211 @@
+{
+  "file_sha256": "799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282",
+  "total": 5999,
+  "splits": {
+    "train": 4800,
+    "test": 1199
+  },
+  "labels": {
+    "[\"safe\"]": 5999
+  },
+  "fields": [
+    "caption",
+    "labels",
+    "split"
+  ],
+  "exact_train_test_shared_distinct_captions": 8,
+  "exact_shared_captions": [
+    "20'li yaşlar, kadın, Beyaz, oval yüz, kavisli kaşlar, badem gözler, düz burun, dolgun dudaklar, açık ten rengi, uzun dalgalı kahverengi saç, gülümseyen ifade, sakal/bıyık yok, sallantılı küpeler, hafif makyaj, şapka yok, gözlük yok",
+    "Kısa siyah saçlı adam siyah bir ceket ve siyah pantolon giyiyor. Ayrıca siyah ayakkabı giyiyor.",
+    "Siyah kısa saçlı bir adam siyah bir ceket ile mavi kot pantolon ve kahverengi ayakkabı giyiyor, siyah bir sırt çantası taşıyor.",
+    "Siyah kısa saçlı bir adam siyah bir ceket ile mavi kot pantolon ve siyah ayakkabı giyiyor, siyah bir sırt çantası taşıyor.",
+    "Siyah kısa saçlı bir adam siyah bir ceket ile siyah pantolon ve siyah ayakkabı giyiyor.",
+    "Siyah omuz hizasında saçlı genç bir kadın uzun siyah bir ceket ile siyah pantolon ve siyah bot giyiyor.",
+    "orta yaşlı Beyaz kadın, oval yüz, kavisli kaşlar, badem gözler, düz burun, dolgun dudaklar, açık ten rengi, uzun dalgalı sarı saç, nötr ifade, görünür aksesuar veya makyaj yok, sakal/bıyık yok",
+    "orta yaşlı kadın, oval yüz, kavisli kaşlar, badem gözler, düz burun, dolgun dudaklar, açık zeytuni ten, uzun dalgalı kahverengi saç, nötr ifade, görünür aksesuar veya makyaj yok, sakal/bıyık yok"
+  ],
+  "excluded_train": [
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:22",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:648",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:736",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1214",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1462",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1731",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1747",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1766",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:2476",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3431",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3535",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3783",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3981",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4047",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4240",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4311",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4410",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4903",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:5098",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:5124",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:5137",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:5505",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:5597",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:5696",
+      "reasons": [
+        "duplicate_train_text"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:5731",
+      "reasons": [
+        "held_out_text_overlap"
+      ]
+    }
+  ],
+  "eligible_train": 4775,
+  "eligible_age_groups": {
+    "adult": 1832,
+    "unknown": 2917,
+    "minor_or_mixed": 26
+  },
+  "person_level_leakage_verifiable": false,
+  "person_level_note": "Tam person_id yok; kişi düzeyinde sızıntı doğrulanamaz.",
+  "source_id_note": "Dosya SHA256 ve 1 tabanlı kayıt konumu; person_id değildir.",
+  "input_unchanged": true,
+  "separate_evaluation_report": {
+    "file": "Guardrail Test - query_final_tr (modernbert-tr-guardrail).xlsx",
+    "dataset": "query_final_tr.jsonl",
+    "total_captions": 3250.0,
+    "reported_ground_truth": "Hepsi SAFE",
+    "overall_unsafe_threshold": 0.5,
+    "overall_unsafe_at_threshold": 142.0,
+    "sexual_content_adult_score_ge_0_5": 1330.0,
+    "sexual_category_row": {
+      "sheet": "Untitled",
+      "row": 23,
+      "values": [
+        "SEXUAL_CONTENT_ADULT",
+        141.0,
+        1330.0,
+        0.4356,
+        1.0
+      ]
+    },
+    "same_dataset_as_source_assumed": false,
+    "note": "Özet değerler yerel XLSX'ten okundu; tam 3250 satırlık tahmin kümesi mevcut değil. Metrikler ayrı tutuldu."
+  }
+}

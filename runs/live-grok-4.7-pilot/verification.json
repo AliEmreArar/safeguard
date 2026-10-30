@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-27",
+  "requested_model": "grok-4.7",
+  "returned_models": [
+    "grok-4.7-internal"
+  ],
+  "offline_tests_passed": 40,
+  "live_smoke_tests_passed": 1,
+  "pilot_jobs_completed": 90,
+  "http_attempts_in_pilot": 93,
+  "accepted_candidates": 84,
+  "outcomes": {
+    "success": 84,
+    "validation_rejected": 6
+  },
+  "error_reasons": {
+    "source_age_evidence_not_preserved": 3,
+    "adult_evidence_missing_or_minor_cue": 3
+  },
+  "review_csv_rows": 84,
+  "review_html_cards": 84,
+  "changed_span_offsets_verified": true,
+  "source_sha256_unchanged": true,
+  "resume_skipped_jobs": 90,
+  "extra_api_calls_on_resume": 0,
+  "human_approved_records": 0,
+  "source_validation_report": "runs\\live-grok-4.7-pilot\\validation.json",
+  "independent_semantic_review_flags": 7,
+  "independent_semantic_review_is_human_approval": false
+}

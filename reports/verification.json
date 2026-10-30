@@ -1,0 +1,11 @@
+{
+  "offline_tests_passed": 37,
+  "live_tests_run": false,
+  "real_generation_api_calls": 0,
+  "dry_run_records": 90,
+  "review_csv_rows": 90,
+  "review_html_cards": 90,
+  "source_sha256_unchanged": true,
+  "resume_skipped_completed_jobs": 90,
+  "independent_validation": "runs/dry-run/validation.json"
+}

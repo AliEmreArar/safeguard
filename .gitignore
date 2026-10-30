@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.sqlite3*
+!runs/dry-run/state.sqlite3
+!runs/live-grok-4.7-pilot/state.sqlite3
+.run.lock
+*.tmp
+*.log
+models/
+.cache/
+.model-venv/
+.transfer/

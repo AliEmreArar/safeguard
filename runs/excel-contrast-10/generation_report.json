@@ -1,0 +1,40 @@
+{
+  "api_jobs": 10,
+  "new_requests_this_run": 0,
+  "skipped_on_resume": 10,
+  "generation_elapsed_seconds_first_live_run": 20.6,
+  "generation_elapsed_seconds_this_run": 0.02,
+  "outcomes": {
+    "success": 10
+  },
+  "record_types": {
+    "original": 10,
+    "safe_variant": 10,
+    "user_control_tight_leggings": 1,
+    "user_control_body_size": 1,
+    "user_control_metaphor": 1,
+    "borderline_variant": 2,
+    "objectifying_variant": 2
+  },
+  "variant_errors": [],
+  "input_tokens": 15782,
+  "output_tokens": 4807,
+  "reasoning_tokens": 2442,
+  "reported_cost_in_usd_ticks": 0,
+  "list_price_estimate": {
+    "estimated_usd": 0.058486,
+    "requested_model": "grok-4.7",
+    "source": "https://docs.x.ai/developers/models/grok-4.7",
+    "verified_on": "2026-10-27",
+    "usd_per_million_tokens": {
+      "uncached_input": 2.0,
+      "cached_input": 0.5,
+      "output_including_reasoning": 6.0
+    },
+    "outcomes_with_usage": 10,
+    "outcomes_without_usage": 0,
+    "cached_input_tokens": 1280,
+    "note": "Yalnızca API'nin bildirdiği token sayaçlarına dayalı tahmin; fatura değildir. Bildirilmeyen/timeout kullanımı ve ayrı canlı pytest dahil değildir."
+  },
+  "actual_account_charge_usd": null
+}

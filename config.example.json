@@ -1,0 +1,12 @@
+{
+  "source_limit": 30,
+  "quotas": {"normal_safe": 30, "hard_safe": 30, "objectification": 10, "sexual_intent": 10, "sexual_harassment": 10},
+  "model": "",
+  "concurrency": 2,
+  "timeout_seconds": 90,
+  "max_retries": 2,
+  "temperature": 0.8,
+  "max_output_tokens": 900,
+  "seed": 42,
+  "prompt_version": "v1"
+}

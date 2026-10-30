@@ -1,0 +1,15 @@
+{
+  "offline_tests_passed": 45,
+  "sources": 10,
+  "scored_rows": 27,
+  "api_calls": 10,
+  "extra_api_calls_on_resume": 0,
+  "xlsx_unchanged": true,
+  "model_revision": "b19585c4ae526f9539f7e3213f56624222c0526e",
+  "all_11_sigmoid_scores_saved": true,
+  "all_review_status_pending": true,
+  "max_original_unsafe_difference_vs_rounded_excel": 0.0005088772773742534,
+  "max_original_sexual_difference_vs_rounded_excel": 0.0003048052787780753,
+  "original_scores_reproduced_within_report_rounding": true,
+  "training_performed": false
+}

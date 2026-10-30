@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-27",
+  "requested_model": "grok-4.7",
+  "model_documentation": "https://docs.x.ai/developers/models/grok-4.7",
+  "env_model_updated": true,
+  "api_key_printed": false,
+  "test_command": "pytest -q -m live --tb=short",
+  "live_tests_passed": 1,
+  "offline_tests_deselected": 37,
+  "elapsed_test_seconds": 24.62,
+  "test_source": "Synthetic safe adult fixture defined in tests/test_live.py; not a dataset caption",
+  "structured_output_validation": "passed",
+  "initial_sandbox_attempt": "network_error",
+  "authorized_network_attempt": "passed",
+  "full_90_candidate_pilot": "completed_after_explicit_user_approval",
+  "full_pilot_output_directory": "runs/live-grok-4.7-pilot",
+  "token_usage": null,
+  "note": "The existing live pytest asserts the structured candidate response but does not persist usage. No usage or cost figure was invented.",
+  "pilot_completed_jobs": 90,
+  "pilot_accepted_candidates": 84,
+  "pilot_validation_rejected": 6,
+  "pilot_verification": "runs\\live-grok-4.7-pilot\\verification.json"
+}
