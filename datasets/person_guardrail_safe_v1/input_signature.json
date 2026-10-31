@@ -1,0 +1,10 @@
+{
+  "source_hashes": {
+    "data/train_final.jsonl": "0cea86754090a8cac681b664d8e778894d3251c301a2282c64defbbb8d3c4932",
+    "data/query_final.jsonl": "1d63b21335c91859aa84f4286bcc48748031e8d8393a5d2a5e618e215c0fb1d3",
+    "data/gallery_final.jsonl": "462e184758ebd5b2f27e6bc9ff7fc660d662f6adbbada7438768500b22ae5a7b"
+  },
+  "seed": 20261031,
+  "language": "en",
+  "version": 1
+}

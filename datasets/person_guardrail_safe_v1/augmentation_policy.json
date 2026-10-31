@@ -1,0 +1,10 @@
+{
+  "new_train_positives_must_come_from": "data/train_final.jsonl groups assigned to training",
+  "group_split_registry": "source_group_assignments.json",
+  "positive_generation_adult_requirement": "Use explicit adult evidence or obtain adult confirmation; safe annotation does not establish adulthood",
+  "keep_all_source_variants_in_same_split": true,
+  "previous_141_excel_positives": "All originate in data/query_final.jsonl; reserve for held-out review/evaluation, never add to train",
+  "validation_and_test_not_selected_using_scores": true,
+  "unknown_hazard_labels_in_future_positive_examples": "Use label_mask=0 for unreviewed hazards, not automatically negative",
+  "before_training": "Add reviewed positives and independent positive validation/test examples; safe-only is a prepared subset"
+}

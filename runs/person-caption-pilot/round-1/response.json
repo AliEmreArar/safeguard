@@ -1,0 +1,32 @@
+{
+  "pairs": [
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1",
+      "safe_caption": "30'lu yaşlarında kadın, düzgün yüz hatları, belirgin kaşları, badem biçimli açık kahverengi gözleri, düz burnu, dolgun dudakları ve uzun düz sarı saçıyla gülümser. Sıcak tenli, hafif makyajlı ve küçük küpelidir. Dar siyah straplez üst, mini etek ve topuklu ayakkabılar giyer; omzunda küçük bir çanta taşır ve dik durarak kameraya bakar.",
+      "sexual_caption": "30'lu yaşlarında kadın, düzgün yüz hatları, belirgin kaşları, badem biçimli açık kahverengi gözleri, düz burnu, dolgun dudakları ve uzun düz sarı saçıyla gülümser. Sıcak tenli, hafif makyajlı ve küçük küpelidir. Dar siyah straplez üst, mini etek ve topuklu ayakkabılarla poz verirken parmağını yavaşça dudağının üzerinde gezdirip davetkâr bakışlarla partnerini yatağa çağırır.",
+      "sexual_evidence": "davetkâr bakışlarla partnerini yatağa çağırır",
+      "rationale": "Kıyafet aynı kalır; cinsel fark, açık davet ve yatak çağrısı içeren yetişkin flört davranışından gelir."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4",
+      "safe_caption": "Orta yaşlı kadın, orta genişlikte yüzü, düz kaşları, kapalı gözleri, pembe dudakları ve buğday teniyle aşağı bakar. Orta uzunlukta koyu düz saçı, sallantılı küpeleri ve ruju vardır. Bordo dekolteli üst, siyah tayt ve düz ayakkabılar giyer; elinde katlanmış ceket tutarak sakin adımlarla yürür.",
+      "sexual_caption": "Orta yaşlı kadın, orta genişlikte yüzü, düz kaşları, kapalı gözleri, pembe dudakları ve buğday teniyle aşağı bakar. Orta uzunlukta koyu düz saçı, sallantılı küpeleri ve ruju vardır. Bordo dekolteli üst, siyah tayt ve düz ayakkabılarla yürürken dudaklarını ıslatıp sevgilisinin kulağına gece boyunca onu öpmek istediğini fısıldar.",
+      "sexual_evidence": "gece boyunca onu öpmek istediğini fısıldar",
+      "rationale": "Aynı kıyafet nötr kalır; cinsel bağlam, ıslak dudak ve açık öpüşme arzusu taşıyan fısıltıyla eklenir."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3",
+      "safe_caption": "20'li yaşlar, erkek, yan profilde alçak saç çizgisi, köşeli yüzü, düz kaşları, kapalı gözleri ve orta boy burnuyla nötr durur. Açık tenli, kısa koyu saçlıdır; sakalı ve aksesuarı yoktur. Beyaz gömlek, koyu pantolon ve deri ayakkabılar giyer, elinde kitap tutarak ayakta bekler.",
+      "sexual_caption": "20'li yaşlar, erkek, yan profilde alçak saç çizgisi, köşeli yüzü, düz kaşları, kapalı gözleri ve orta boy burnuyla durur. Açık tenli, kısa koyu saçlıdır. Beyaz gömlek, koyu pantolon ve deri ayakkabılarla kitabı indirir; partnerinin beline sarılıp boynunu yavaşça öperek arzulu nefesler alır.",
+      "sexual_evidence": "boynunu yavaşça öperek arzulu nefesler alır",
+      "rationale": "Giysi değişmez; nötr bekleyiş yerine bel sarma, boyun öpme ve arzulu nefes açık cinsel davranış oluşturur."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8",
+      "safe_caption": "Orta yaşlı erkek, gerileyen saç çizgisi, oval yüzü, kalın kaşları, koyu renk gözleri, düz burnu ve kapalı dudaklarıyla ciddi görünür. Buğday tenli, kısa koyu saçlıdır; aksesuarı ve makyajı yoktur. Lacivert ceket, gömlek, gri pantolon ve bağcıklı ayakkabılar giyer, evrak çantasını taşıyarak yürür.",
+      "sexual_caption": "Orta yaşlı erkek, gerileyen saç çizgisi, oval yüzü, kalın kaşları, koyu renk gözleri, düz burnu ve kapalı dudaklarıyla ciddi görünür. Buğday tenli, kısa koyu saçlıdır. Lacivert ceket, gömlek, gri pantolon ve bağcıklı ayakkabılarla evrak çantasını bırakır; partnerini duvara yaslayıp gömlek yakasını çözerek ateşli bir öpüşmeye başlar.",
+      "sexual_evidence": "gömlek yakasını çözerek ateşli bir öpüşmeye başlar",
+      "rationale": "Aynı iş kıyafeti korunur; duvara yaslama, yakayı çözme ve ateşli öpüşme cinsel eylemi belirginleştirir."
+    }
+  ]
+}

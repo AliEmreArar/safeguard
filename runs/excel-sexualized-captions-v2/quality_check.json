@@ -1,0 +1,42 @@
+{
+  "source_unchanged": true,
+  "source_rows": 142,
+  "generated": 141,
+  "excluded_minor": 1,
+  "unique_source_ids": 141,
+  "unique_captions": 141,
+  "adult_captions": 141,
+  "verbatim_evidence_matches": 141,
+  "review_status_pending": 141,
+  "excluded_filename": "26682_2.jpg",
+  "unwanted_action_or_offer_flags": [],
+  "evidence_corrections": [
+    {
+      "source_id": "xlsx:4a4121fd2d1b5906c2feee69d3c6a167ecea5dbdf6937818c9375ee1275c2291:Untitled:58",
+      "original_phrase": "beldenden kalçaya uzanan seksi hattını belli ediyor",
+      "corrected_phrase": "belden kalçaya uzanan seksi hattını belli ediyor",
+      "caption_changed": false
+    },
+    {
+      "source_id": "xlsx:4a4121fd2d1b5906c2feee69d3c6a167ecea5dbdf6937818c9375ee1275c2291:Untitled:160",
+      "original_phrase": "ince bedenini tahrik edici biçimde saran katmanlar",
+      "corrected_phrase": "İnce bedenini tahrik edici biçimde saran katmanlar",
+      "caption_changed": false
+    },
+    {
+      "source_id": "xlsx:4a4121fd2d1b5906c2feee69d3c6a167ecea5dbdf6937818c9375ee1275c2291:Untitled:161",
+      "original_phrase": "taytın kalçalarına erotik biçimde oturması",
+      "corrected_phrase": "Taytın kalçalarına erotik biçimde oturması",
+      "caption_changed": false
+    },
+    {
+      "source_id": "xlsx:4a4121fd2d1b5906c2feee69d3c6a167ecea5dbdf6937818c9375ee1275c2291:Untitled:162",
+      "original_phrase": "gövdesi baştan çıkarıcı bir çekicilik taşıyor",
+      "corrected_phrase": "gövdesi baştan çıkarıcı bir çekicilik taşırken",
+      "caption_changed": false
+    }
+  ],
+  "captions_edited_locally": 0,
+  "api_requests_successful": 24,
+  "semantic_labels": "pending_human_review"
+}

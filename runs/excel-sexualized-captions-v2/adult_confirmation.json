@@ -1,0 +1,5 @@
+{
+  "scope": "All unknown-age source rows, all people",
+  "source": "User explicitly confirmed adulthood in conversation",
+  "excludes_minor_cues": true
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "caption": "30'lu yaşlarında kadın, Beyaz ırk, düzgün yüz hatları, belirgin kaşlar, badem gözler, açık kahverengi gözler, düz burun, dolgun dudaklar, sıcak ten rengi, uzun düz sarı saç, gülümseyen ifade, sakal/bıyık yok, küçük küpeler, hafif makyaj, cilt lekesi yok",
+    "split": "train",
+    "labels": [
+      "safe"
+    ],
+    "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1",
+    "metadata": {},
+    "age_evidence": "30'lu yaşlarında"
+  },
+  {
+    "caption": "orta yaşlı kadın, Hispanik/Latin, düz saç, orta genişlikte yüz yapısı, düz kaşlar, kapalı gözler, pembe dudaklar, buğday ten rengi, orta uzunlukta koyu saç, aşağı bakan bakış, sakal/bıyık yok, sallantılı küpeler, ruj, görünür iz yok",
+    "split": "train",
+    "labels": [
+      "safe"
+    ],
+    "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4",
+    "metadata": {},
+    "age_evidence": "orta yaşlı"
+  },
+  {
+    "caption": "20'li yaşlar, erkek, Beyaz, yan profil, alçak saç çizgisi, köşeli yüz, düz kaşlar, kapalı gözler, orta boy burun, nötr ifade, açık ten rengi, kısa koyu saç, sakal/bıyık yok, aksesuar yok, görünür iz yok",
+    "split": "train",
+    "labels": [
+      "safe"
+    ],
+    "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3",
+    "metadata": {},
+    "age_evidence": "20'li yaşlar"
+  },
+  {
+    "caption": "orta yaşlı erkek, Beyaz ırk, gerileyen saç çizgisi, oval yüz, kalın kaşlar, koyu renk gözler, düz burun, kapalı dudaklar, buğday ten rengi, kısa koyu saç, ciddi ifade, sakal/bıyık yok, aksesuar yok, makyaj yok, görünür cilt lekesi yok",
+    "split": "train",
+    "labels": [
+      "safe"
+    ],
+    "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8",
+    "metadata": {},
+    "age_evidence": "orta yaşlı"
+  }
+]

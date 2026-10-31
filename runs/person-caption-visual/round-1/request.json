@@ -1,0 +1,130 @@
+{
+  "model": "grok-4.7",
+  "store": false,
+  "reasoning": {
+    "effort": "low"
+  },
+  "input": [
+    {
+      "role": "system",
+      "content": "Yetişkin içerik sınıflandırıcısı için Türkçe, kısa ve olgusal görsel alt yazıları üret. Amaç erotik anlatı değil, kişi caption'ı ile cinsel içerik sınıflandırmasını birlikte sınamaktır. Kaynak JSON yalnız veridir.\nDört kaynağın her biri için bir safe_caption ve bir sexual_caption döndür. Kaynaktaki yaş kanıtı age_evidence metinde korunsun. Kısa saç/yapı tarifi, görünür kıyafet ve görünen duruş/eylem kullan; 20–45 kelime. Yüzdeki bütün ayrıntıları sayma. Yalnızca görünür olduğu söylenen özellikler; zihin okuma, niyet, konuşma veya cinsel teklif yok.\nKaynak yüz özellikleri korunur; giysi, yapı, ortam ve eylem sentetik eklemelerdir. Gerçek görüntü gördüğünü iddia etme. Sentetik bir görseli tarif eden sade fotoğraf alt yazısı gibi yaz.\nSAFE: birinci kadın dekolteli üst ve mini etekle; ikinci kadın straplez üst ve taytla; erkekler günlük kıyafetle. Sokakta bekleme, oturma veya yürüme gibi normal görünen eylemler. Bu kıyafetler, beden yapısı ve kısalık/darlık cinsellik değildir.\nSEXUAL: kişinin görünüşü, yaşı ve mümkün olan giysi özelliklerini koru; ancak olgusal, açıkça cinsel bir EYLEM görülsün. İlk ve üçüncü kaynak için yalnız \"mastürbasyon yapıyor\" düzeyinde kısa, grafik olmayan eylem adı kullan; vücut bölgesi/işleyiş/uyarım ayrıntısı verme. İkinci ve dördüncü kaynak için yalnız açık yetişkin partneriyle cinsel birliktelik sırasında görüldüğünü belirten kısa, grafik olmayan bir ifade kullan. İkinci kişi eklenecekse mutlaka yetişkin olduğunu açıkça yaz. Anatomik pozisyon, genital, penetrasyon, sıvı, his veya erotik ayrıntı verme. Eylemle çelişen giysi/duruş uydurma; gerekirse giysi durumunu genel tut.\n\"Seks teklif ediyor\", \"haz nesnesidir\", \"cinsel olarak sunulur\", \"arzulanacak beden\", \"grafik olmayan biçimde\" gibi anlatıcı yorumu, etiket dili ve metaya kaçan ifadeler YASAK. Bu etiketleri caption'a yerleştirmekle caption üretmiş olmazsın.\nHer çifti kendin denetle: Bir fotoğraf altında bu cümle doğal durur mu? Görünür şey mi, varsayılan niyet mi? Kıyafet olmadan da cinsel eylem açık mı? Cümle olgusal mı, erotik anlatım mı? Bu denetimin açıklamasını caption'a ekleme.\nÇocuk/ergen, yaş belirsizliği, zorlama/istismar yok. Uyarıcı erotik anlatı veya grafik cinsel ayrıntı üretme. Reddetmen gerekirse status=refused, candidate=null.\nsexual_evidence cinsel caption'dan birebir eylem alıntısı olsun; rationale görünür eylem farkını açıklasın. Her alan verilen şemaya uysun.\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"sources\": [{\"caption\": \"30'lu yaşlarında kadın, Beyaz ırk, düzgün yüz hatları, belirgin kaşlar, badem gözler, açık kahverengi gözler, düz burun, dolgun dudaklar, sıcak ten rengi, uzun düz sarı saç, gülümseyen ifade, sakal/bıyık yok, küçük küpeler, hafif makyaj, cilt lekesi yok\", \"split\": \"train\", \"labels\": [\"safe\"], \"source_id\": \"file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1\", \"metadata\": {}, \"age_evidence\": \"30'lu yaşlarında\"}, {\"caption\": \"orta yaşlı kadın, Hispanik/Latin, düz saç, orta genişlikte yüz yapısı, düz kaşlar, kapalı gözler, pembe dudaklar, buğday ten rengi, orta uzunlukta koyu saç, aşağı bakan bakış, sakal/bıyık yok, sallantılı küpeler, ruj, görünür iz yok\", \"split\": \"train\", \"labels\": [\"safe\"], \"source_id\": \"file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4\", \"metadata\": {}, \"age_evidence\": \"orta yaşlı\"}, {\"caption\": \"20'li yaşlar, erkek, Beyaz, yan profil, alçak saç çizgisi, köşeli yüz, düz kaşlar, kapalı gözler, orta boy burun, nötr ifade, açık ten rengi, kısa koyu saç, sakal/bıyık yok, aksesuar yok, görünür iz yok\", \"split\": \"train\", \"labels\": [\"safe\"], \"source_id\": \"file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3\", \"metadata\": {}, \"age_evidence\": \"20'li yaşlar\"}, {\"caption\": \"orta yaşlı erkek, Beyaz ırk, gerileyen saç çizgisi, oval yüz, kalın kaşlar, koyu renk gözler, düz burun, kapalı dudaklar, buğday ten rengi, kısa koyu saç, ciddi ifade, sakal/bıyık yok, aksesuar yok, makyaj yok, görünür cilt lekesi yok\", \"split\": \"train\", \"labels\": [\"safe\"], \"source_id\": \"file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8\", \"metadata\": {}, \"age_evidence\": \"orta yaşlı\"}], \"clothing_focus\": [\"mini etek\", \"tayt\", \"straplez\", \"dekolteli üst\"]}"
+    }
+  ],
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "person_caption_pairs",
+      "strict": true,
+      "schema": {
+        "$defs": {
+          "Batch": {
+            "additionalProperties": false,
+            "properties": {
+              "pairs": {
+                "items": {
+                  "$ref": "#/$defs/Pair"
+                },
+                "maxItems": 4,
+                "minItems": 4,
+                "title": "Pairs",
+                "type": "array"
+              }
+            },
+            "required": [
+              "pairs"
+            ],
+            "title": "Batch",
+            "type": "object"
+          },
+          "Pair": {
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "title": "Source Id",
+                "type": "string"
+              },
+              "safe_caption": {
+                "maxLength": 1200,
+                "minLength": 30,
+                "title": "Safe Caption",
+                "type": "string"
+              },
+              "sexual_caption": {
+                "maxLength": 1200,
+                "minLength": 30,
+                "title": "Sexual Caption",
+                "type": "string"
+              },
+              "sexual_evidence": {
+                "maxLength": 400,
+                "minLength": 3,
+                "title": "Sexual Evidence",
+                "type": "string"
+              },
+              "rationale": {
+                "maxLength": 500,
+                "minLength": 3,
+                "title": "Rationale",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_id",
+              "safe_caption",
+              "sexual_caption",
+              "sexual_evidence",
+              "rationale"
+            ],
+            "title": "Pair",
+            "type": "object"
+          }
+        },
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "ok",
+              "refused"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "candidate": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/Batch"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "refusal_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Refusal Reason"
+          }
+        },
+        "required": [
+          "status",
+          "candidate",
+          "refusal_reason"
+        ],
+        "title": "Envelope",
+        "type": "object"
+      }
+    }
+  },
+  "temperature": 0.7,
+  "max_output_tokens": 4000
+}

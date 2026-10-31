@@ -1,5 +1,52 @@
 # Türkçe ReID moderasyon verisi pilotu
 
+## Güncel veri dosyaları — 31 Ekim 2026
+
+- [Safe person veri seti ve formatı](datasets/person_guardrail_safe_v1/README.md): 2.000 train, 250 validation, 500 test ve 250 kıyafet challenge örneği. Kaynak İngilizce korunur; 11 çıkışlı modele uygun etiketler ve başlangıç skorları içerir. Sexual pozitifler henüz bu eğitim alt kümesine eklenmedi.
+- [Seçilen safe örneklerin ön izlemesi](datasets/person_guardrail_safe_v1/selection_preview.txt).
+- [141 cinselleştirilmiş caption adayı](runs/excel-sexualized-captions-v2/sexualized_captions.txt), [kaynakla karşılaştırma CSV'si](runs/excel-sexualized-captions-v2/comparison.csv) ve [üretim notları](runs/excel-sexualized-captions-v2/README.md). Aday etiketleri insan incelemesi bekler; açık çocuk kaydı dışlandı.
+- Kaynak person dosyaları `data/` altındadır. Query/gallery eğitim dışında tutulur. Önceki 141 sexual adayın tamamı query kaynaklı olduğundan train'e eklenmemelidir; yeni eğitim pozitifleri train kaynak gruplarından üretilmelidir.
+
+## Kişi caption'ı için son prompt denemeleri
+
+Önceki denemedeki teklif ve nesneleştirme cümleleri istenen caption biçimine
+uygun bulunmadı. Sonraki [görsel caption denemesinin değerlendirmesi](runs/person-caption-visual/REVIEW.md)
+ve [seçilmiş karşıt çift](runs/person-caption-visual/selected_pair.txt) burada.
+Bu da küçük bir biçim pilotudur; diğer çıktılardaki sorunlar raporda açıkça belirtilir.
+
+30 Ekim 2026'da Grok ile üç küçük prompt turu çalıştırıldı. Son turdaki dört
+güvenli/cinsel karşıt çift [metin dosyasında](runs/person-caption-pilot/latest_pairs.txt),
+tüm turlar ve yerel model skorları [inceleme ekranında](runs/person-caption-pilot/review.html).
+[Deney raporu](runs/person-caption-pilot/REPORT.md) prompt değişikliklerini,
+giysi kaynaklı yanlış pozitifleri ve kalan dil/çeşitlilik sorunlarını açıklar.
+Etiketler insan incelemesi bekler; model eğitilmedi.
+
+## Terminalde kendi metnini test et
+
+Proje klasöründe PowerShell açıp çalıştır:
+
+```powershell
+.\guardrail.bat
+```
+
+Model bir kez yüklenir. `Metin >` satırına metnini yazıp Enter'a bas;
+arka arkaya farklı metinler deneyebilirsin. Çıkmak için `/exit` veya Ctrl+C kullan.
+API anahtarı gerekmez; metinler yerelde işlenir ve dosyaya kaydedilmez.
+
+Tek metin ve isteğe bağlı karar eşiği:
+
+```powershell
+.\guardrail.bat --text "Mavi ceket giyen bir kişi."
+.\guardrail.bat --threshold 0.7
+```
+
+Doğrudan Python komutu: `.\.venv\Scripts\python.exe -m reid_guardrail.test_text`.
+Genel SAFE/UNSAFE kararı `unsafe >= 0.5` üzerinden verilir (eşik değiştirilebilir).
+10 kategori skoru ayrıca gösterilir; kategori eşiğinin aşılması genel kararı değiştirmez.
+Sigmoid skorları birbirinden bağımsızdır, toplamları 1 olmak zorunda değildir ve
+kesin doğruluk / kalibre edilmiş olasılık anlamına gelmez. Token sınırını aşan
+metinler sessizce kırpılmadan reddedilir.
+
 Grok üzerinden kontrollü sentetik aday veri üretir. Kaynak JSON/JSONL'yi değiştirmez; model eğitmez. Her aday insan incelemesi bekler. Varsayılan çalışma ağsızdır. Canlı üretim yalnızca `--live` ile başlar.
 
 ## Başka bir bilgisayarda devam etme

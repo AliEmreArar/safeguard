@@ -1,0 +1,32 @@
+{
+  "pairs": [
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1",
+      "safe_caption": "30'lu yaşlarında, uzun düz sarı saçlı ve sıcak tenli, ince yapılı yetişkin kadın; bordo dekolteli bluz ve siyah mini etek giyer. Küçük küpeleri ve hafif makyajı vardır. Aydınlık bir kafede sandalyede oturur, masadaki fincana bakarak bekler.",
+      "sexual_caption": "30'lu yaşlarında, uzun düz sarı saçlı ve sıcak tenli, ince yapılı yetişkin kadın; yatak odasında bordo dekolteli bluzla yalnızdır. Yatağın kenarında oturmuş halde mastürbasyon yapar; yüzünde sakin, kapalı bir ifade vardır.",
+      "sexual_evidence": "mastürbasyon yapar",
+      "rationale": "Güvenli metin oturma ve beklemeyi anlatır; cinsel anlam yalnızca açıkça adlandırılan mastürbasyon eyleminden gelir."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4",
+      "safe_caption": "Orta yaşlı, orta uzunlukta koyu saçlı ve buğday tenli, dolgun yapılı yetişkin kadın; lacivert straplez üst ve gri tayt giyer. Sallantılı küpeleri vardır. Loş spor salonunda minderin yanında durur, aşağı bakarak bekler.",
+      "sexual_caption": "Orta yaşlı, orta uzunlukta koyu saçlı ve buğday tenli, dolgun yapılı yetişkin kadın; yatak odasında lacivert straplez üstüyle durur. Yetişkin partneriyle cinsel birliktelik yaşar; başı hafifçe öne eğiktir.",
+      "sexual_evidence": "Yetişkin partneriyle cinsel birliktelik yaşar",
+      "rationale": "Güvenli metin spor salonunda beklemeyi gösterir; cinsel sınıflama partnerin yetişkinliği belirtilen birliktelik eyleminden doğar."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3",
+      "safe_caption": "20'li yaşlar, kısa koyu saçlı ve açık tenli, atletik yapılı yetişkin erkek; bej gömlek, lacivert pantolon ve kahverengi ayakkabılar giyer. Yan profilde, şehir kaldırımı boyunca yürür; nötr ifadesi ve kapalı gözleri seçilir.",
+      "sexual_caption": "20'li yaşlar, kısa koyu saçlı ve açık tenli, atletik yapılı yetişkin erkek; odasında bej gömleğiyle yalnız oturur. Başını yana çevirmiş halde mastürbasyon yapar; yüzünde nötr bir ifade vardır.",
+      "sexual_evidence": "mastürbasyon yapar",
+      "rationale": "Güvenli metindeki yürüyüş günlük bir eylemdir; cinsel sürüm yalnızca mastürbasyon adını ekler ve ayrıntı vermez."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8",
+      "safe_caption": "Orta yaşlı, kısa koyu saçlı ve buğday tenli, geniş omuzlu yetişkin erkek; gri ceket, beyaz gömlek, koyu pantolon ve siyah ayakkabılar giyer. Elinde lacivert evrak çantasıyla ofis koridorunda yürür; ciddi ifadesi korunur.",
+      "sexual_caption": "Orta yaşlı, kısa koyu saçlı ve buğday tenli, geniş omuzlu yetişkin erkek; yatak odasında beyaz gömleğiyle durur. Yetişkin partneriyle cinsel birliktelik yaşar; yüzündeki ciddi ifade aynı kalır.",
+      "sexual_evidence": "Yetişkin partneriyle cinsel birliktelik yaşar",
+      "rationale": "Güvenli metin ofiste yürümeyi betimler; cinsel metin aynı yetişkini belirtir ve anlamı yalnızca yetişkin partnerle birliktelik eyleminden alır."
+    }
+  ]
+}

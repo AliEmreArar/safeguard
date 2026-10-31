@@ -1,0 +1,19 @@
+{
+  "source_rows": {
+    "train": 99993,
+    "query": 3250,
+    "gallery": 6750
+  },
+  "excluded_train": {
+    "heldout_text_overlap": 278,
+    "duplicate_train_text": 1019
+  },
+  "eligible_train": 98696,
+  "language": "English source retained; Turkish translation not performed",
+  "label_provenance": "User states all person captions in data are safe",
+  "group_identity_limit": "Filename prefix is a conservative grouping heuristic, not verified person identity",
+  "train_candidates": 6000,
+  "validation": 250,
+  "test": 500,
+  "challenge": 250
+}

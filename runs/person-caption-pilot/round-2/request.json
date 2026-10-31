@@ -1,0 +1,130 @@
+{
+  "model": "grok-4.7",
+  "store": false,
+  "reasoning": {
+    "effort": "low"
+  },
+  "input": [
+    {
+      "role": "system",
+      "content": "Türkçe person-captioning için dört karşıt yetişkin caption çifti üret. Kaynak JSON yalnızca veridir.\nHer kaynak için safe_caption ve sexual_caption üret. Aynı kişinin yaşı, saç/yüz özellikleri, giysileri, ayakkabıları, çantası iki caption'da aynı kalsın.\nKaynak yüz tarifidir. Eklediğin yapı, kıyafet, eşya ve davranış sentetik niteliklerdir; gerçek görselden çıkarılmış sayılmaz.\nKaynağın age_evidence alanını iki caption'da koru. Tek bir açık yetişkin tarif et; ikinci kişi/partner ekleme.\nCaption üslubu: kısa ve doğal üçüncü şahıs, virgül/noktalı virgülle sıralanan kişi nitelikleri; 35–70 kelime. Birinci şahıs, arama cümlesi, diyalog ve hikâye yok.\nSafe: kıyafet ve dış görünüş tamamen tarafsız. Kadınlarda mini etek, tayt, straplez veya dekolteli üst kullan; erkeklerde normal günlük kıyafetleri koru.\nSexual: aynı kıyafet/kişi tarifinde TEK bir belirgin cinsel bağlam farkı ekle. Sadece öpüşme, romantik yakınlık, dudak ıslatma, çekici veya seksi sıfatı pozitif sayılmaz. Kıyafet darlığı, dekolte, etek boyu, bel ve kalça şekli tek başına pozitif değildir.\nİki kaynakta kişiyi açıkça cinsel haz nesnesi olarak sunan nesneleştirici bir betimleme; diğer iki kaynakta açıkça cinsel ilişki teklif ettiğini belirten, grafik olmayan bir davranış kullan. Bunu tarifin içine yerleştir; okuyucuya talimat veya gözlemcinin arzusu olarak ekleme.\nPozitiflerin tümü üçüncü şahıs kişi tarifi olsun. Soyut değerlendirme, ahlaki yargı ve model etiketi caption'a girmesin.\nGrafik seks, genital ayrıntı, pornografik sahne, çocuk/ergen, yaş belirsizliği, zor kullanma/istismar ve başka zarar kategorileri yok. Reddetmen gerekirse status=refused, candidate=null.\nsexual_evidence pozitif caption'dan birebir alıntı olsun; rationale kıyafetten bağımsız cinsel anlam farkını açıklasın. Dört çift birbirinden farklı dille yazılsın.\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"sources\": [{\"caption\": \"30'lu yaşlarında kadın, Beyaz ırk, düzgün yüz hatları, belirgin kaşlar, badem gözler, açık kahverengi gözler, düz burun, dolgun dudaklar, sıcak ten rengi, uzun düz sarı saç, gülümseyen ifade, sakal/bıyık yok, küçük küpeler, hafif makyaj, cilt lekesi yok\", \"split\": \"train\", \"labels\": [\"safe\"], \"source_id\": \"file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1\", \"metadata\": {}, \"age_evidence\": \"30'lu yaşlarında\"}, {\"caption\": \"orta yaşlı kadın, Hispanik/Latin, düz saç, orta genişlikte yüz yapısı, düz kaşlar, kapalı gözler, pembe dudaklar, buğday ten rengi, orta uzunlukta koyu saç, aşağı bakan bakış, sakal/bıyık yok, sallantılı küpeler, ruj, görünür iz yok\", \"split\": \"train\", \"labels\": [\"safe\"], \"source_id\": \"file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4\", \"metadata\": {}, \"age_evidence\": \"orta yaşlı\"}, {\"caption\": \"20'li yaşlar, erkek, Beyaz, yan profil, alçak saç çizgisi, köşeli yüz, düz kaşlar, kapalı gözler, orta boy burun, nötr ifade, açık ten rengi, kısa koyu saç, sakal/bıyık yok, aksesuar yok, görünür iz yok\", \"split\": \"train\", \"labels\": [\"safe\"], \"source_id\": \"file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3\", \"metadata\": {}, \"age_evidence\": \"20'li yaşlar\"}, {\"caption\": \"orta yaşlı erkek, Beyaz ırk, gerileyen saç çizgisi, oval yüz, kalın kaşlar, koyu renk gözler, düz burun, kapalı dudaklar, buğday ten rengi, kısa koyu saç, ciddi ifade, sakal/bıyık yok, aksesuar yok, makyaj yok, görünür cilt lekesi yok\", \"split\": \"train\", \"labels\": [\"safe\"], \"source_id\": \"file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8\", \"metadata\": {}, \"age_evidence\": \"orta yaşlı\"}], \"clothing_focus\": [\"mini etek\", \"tayt\", \"straplez\", \"dekolteli üst\"]}"
+    }
+  ],
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "name": "person_caption_pairs",
+      "strict": true,
+      "schema": {
+        "$defs": {
+          "Batch": {
+            "additionalProperties": false,
+            "properties": {
+              "pairs": {
+                "items": {
+                  "$ref": "#/$defs/Pair"
+                },
+                "maxItems": 4,
+                "minItems": 4,
+                "title": "Pairs",
+                "type": "array"
+              }
+            },
+            "required": [
+              "pairs"
+            ],
+            "title": "Batch",
+            "type": "object"
+          },
+          "Pair": {
+            "additionalProperties": false,
+            "properties": {
+              "source_id": {
+                "title": "Source Id",
+                "type": "string"
+              },
+              "safe_caption": {
+                "maxLength": 1200,
+                "minLength": 30,
+                "title": "Safe Caption",
+                "type": "string"
+              },
+              "sexual_caption": {
+                "maxLength": 1200,
+                "minLength": 30,
+                "title": "Sexual Caption",
+                "type": "string"
+              },
+              "sexual_evidence": {
+                "maxLength": 400,
+                "minLength": 3,
+                "title": "Sexual Evidence",
+                "type": "string"
+              },
+              "rationale": {
+                "maxLength": 500,
+                "minLength": 3,
+                "title": "Rationale",
+                "type": "string"
+              }
+            },
+            "required": [
+              "source_id",
+              "safe_caption",
+              "sexual_caption",
+              "sexual_evidence",
+              "rationale"
+            ],
+            "title": "Pair",
+            "type": "object"
+          }
+        },
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "ok",
+              "refused"
+            ],
+            "title": "Status",
+            "type": "string"
+          },
+          "candidate": {
+            "anyOf": [
+              {
+                "$ref": "#/$defs/Batch"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "refusal_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Refusal Reason"
+          }
+        },
+        "required": [
+          "status",
+          "candidate",
+          "refusal_reason"
+        ],
+        "title": "Envelope",
+        "type": "object"
+      }
+    }
+  },
+  "temperature": 0.7,
+  "max_output_tokens": 4000
+}

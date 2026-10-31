@@ -1,0 +1,14 @@
+{
+  "source_hashes_unchanged": true,
+  "source_text_and_line_traceability_checked": 3000,
+  "label_vectors_checked": 3000,
+  "label_dimensions": 11,
+  "all_source_labels_user_confirmed_safe": true,
+  "all_text_and_prefix_group_split_overlaps": 0,
+  "max_length_256_no_truncation_needed": true,
+  "model_forward_with_labels_passed": true,
+  "finite_multilabel_loss": 2.256148338317871,
+  "offline_tests_passed": 45,
+  "language": "en",
+  "sexual_candidates_added": 0
+}

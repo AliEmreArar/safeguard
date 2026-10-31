@@ -1,0 +1,32 @@
+{
+  "pairs": [
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1",
+      "safe_caption": "30’lu yaşlarında kadın, düzgün yüz hatları, belirgin kaşlar, badem biçimli açık kahverengi gözler, düz burun, dolgun dudaklar, sıcak ten ve uzun düz sarı saçla gülümser; küçük küpeler ve hafif makyaj taşır, beyaz straplez üst, siyah mini etek ve düz ayakkabılar giyer, omzunda küçük çanta vardır.",
+      "sexual_caption": "30’lu yaşlarında kadın, düzgün yüz hatları, belirgin kaşlar, badem biçimli açık kahverengi gözler, düz burun, dolgun dudaklar, sıcak ten ve uzun düz sarı saçla gülümser; küçük küpeler ve hafif makyaj taşır, beyaz straplez üst, siyah mini etek ve düz ayakkabılar giyer, omzundaki küçük çantayla cinsel haz nesnesi olarak sunulur.",
+      "sexual_evidence": "cinsel haz nesnesi olarak sunulur",
+      "rationale": "Kıyafet aynı kalırken eklenen ifade, kişiyi açıkça cinsel haz amacıyla nesneleştirir."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4",
+      "safe_caption": "Orta yaşlı kadın, orta genişlikte yüzü, düz kaşları, kapalı gözleri, pembe dudakları, buğday teni ve orta uzunlukta koyu saçıyla aşağı bakar; sallantılı küpeler ve ruj taşır, bordo dekolteli üst, siyah tayt ve topuklu ayakkabılar giyer, elinde küçük çanta tutar.",
+      "sexual_caption": "Orta yaşlı kadın, orta genişlikte yüzü, düz kaşları, kapalı gözleri, pembe dudakları, buğday teni ve orta uzunlukta koyu saçıyla aşağı bakar; sallantılı küpeler ve ruj taşır, bordo dekolteli üst, siyah tayt ve topuklu ayakkabılar giyer, elindeki küçük çantayla cinsel haz için sergilenen bir nesne gibi betimlenir.",
+      "sexual_evidence": "cinsel haz için sergilenen bir nesne gibi betimlenir",
+      "rationale": "Giysi değişmeden yapılan ekleme, görünümü cinsel haz amacıyla nesneleştirici bir bağlama taşır."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3",
+      "safe_caption": "20’li yaşlarındaki erkek, yan profilde alçak saç çizgisi, köşeli yüz, düz kaşlar, kapalı gözler, orta boy burun ve nötr ifadeyle görünür; açık tenli, kısa koyu saçlı ve sakalsızdır, mavi gömlek, koyu pantolon ve spor ayakkabı giyer, sırt çantası taşır.",
+      "sexual_caption": "20’li yaşlarındaki erkek, yan profilde alçak saç çizgisi, köşeli yüz, düz kaşlar, kapalı gözler, orta boy burun ve nötr ifadeyle görünür; açık tenli, kısa koyu saçlı ve sakalsızdır, mavi gömlek, koyu pantolon ve spor ayakkabı giyer, sırt çantası taşır ve grafik olmayan biçimde cinsel ilişki teklif eder.",
+      "sexual_evidence": "grafik olmayan biçimde cinsel ilişki teklif eder",
+      "rationale": "Aynı dış görünüşe eklenen davranış, kişinin açıkça cinsel ilişki teklif ettiğini belirtir."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8",
+      "safe_caption": "Orta yaşlı erkek, gerileyen saç çizgisi, oval yüz, kalın kaşlar, koyu gözler, düz burun, kapalı dudaklar, buğday ten ve kısa koyu saçla ciddi durur; sakalsızdır, gri ceket, beyaz gömlek, koyu pantolon ve deri ayakkabı giyer, evrak çantası taşır.",
+      "sexual_caption": "Orta yaşlı erkek, gerileyen saç çizgisi, oval yüz, kalın kaşlar, koyu gözler, düz burun, kapalı dudaklar, buğday ten ve kısa koyu saçla ciddi durur; sakalsızdır, gri ceket, beyaz gömlek, koyu pantolon ve deri ayakkabı giyer, evrak çantası taşır ve açıkça cinsel ilişki teklifinde bulunur.",
+      "sexual_evidence": "açıkça cinsel ilişki teklifinde bulunur",
+      "rationale": "Kıyafet ve görünüm korunurken eklenen fiil, açık bir cinsel ilişki teklifini belirtir."
+    }
+  ]
+}

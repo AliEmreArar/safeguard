@@ -1,0 +1,41 @@
+{
+  "status": "success",
+  "usage": {
+    "input_tokens": 1712,
+    "input_tokens_details": {
+      "cached_tokens": 128
+    },
+    "output_tokens": 1445,
+    "output_tokens_details": {
+      "reasoning_tokens": 113
+    },
+    "total_tokens": 3157,
+    "num_sources_used": 0,
+    "num_server_side_tools_used": 0,
+    "cost_in_usd_ticks": 0,
+    "context_details": {
+      "input_tokens": 1712,
+      "output_tokens": 1452
+    }
+  },
+  "automatic_retries": 0,
+  "returned_pairs": 4,
+  "accepted_candidates": 4,
+  "validation_failures": [
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4",
+      "reasons": [
+        "adult_age_not_preserved",
+        "adult_age_not_preserved"
+      ]
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8",
+      "reasons": [
+        "adult_age_not_preserved",
+        "adult_age_not_preserved"
+      ]
+    }
+  ],
+  "elapsed_seconds": 23.468
+}

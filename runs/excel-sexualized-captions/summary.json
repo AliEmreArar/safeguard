@@ -1,0 +1,10 @@
+{
+  "source_rows": 142,
+  "statuses": {
+    "not_generated": 141,
+    "excluded_minor": 1
+  },
+  "api_events": 1,
+  "human_review_required": true,
+  "known_adults_confirmed_by_user": true
+}

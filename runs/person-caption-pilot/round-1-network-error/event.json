@@ -1,0 +1,7 @@
+{
+  "status": "network_error",
+  "usage": {},
+  "automatic_retries": 0,
+  "detail": "Ağ/timeout; otomatik retry yok.",
+  "elapsed_seconds": 2.078
+}

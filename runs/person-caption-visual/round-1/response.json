@@ -1,0 +1,32 @@
+{
+  "pairs": [
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1",
+      "safe_caption": "30'lu yaşlarında kadın, uzun düz sarı saçlı ve düzgün yüz hatlıdır. Dekolteli üst ve mini etekle sokakta bekler. Küçük küpeleri görünür; gülümseyen ifadesi vardır.",
+      "sexual_caption": "30'lu yaşlarında kadın, uzun düz sarı saçlı ve düzgün yüz hatlıdır. Odasında yalnız otururken mastürbasyon yapıyor. Küçük küpeleri görünür.",
+      "sexual_evidence": "mastürbasyon yapıyor",
+      "rationale": "Güvenli alt yazıda sokakta bekleme vardır; cinsel alt yazıda yalnız yapılan mastürbasyon eylemi görünür."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4",
+      "safe_caption": "Orta yaşlı kadın, orta uzunlukta koyu saçlı ve orta genişlikte yüz yapılıdır. Straplez üst ve taytla bankta oturur. Sallantılı küpeleri ve ruju görünür.",
+      "sexual_caption": "Orta yaşlı kadın, orta uzunlukta koyu saçlı ve orta genişlikte yüz yapılıdır. Yetişkin bir partneriyle cinsel birliktelik sırasında görülür. Sallantılı küpeleri görünür.",
+      "sexual_evidence": "Yetişkin bir partneriyle cinsel birliktelik sırasında görülür",
+      "rationale": "Güvenli alt yazıda bankta oturma vardır; cinsel alt yazıda yetişkin partnerle cinsel birliktelik görünür."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3",
+      "safe_caption": "20'li yaşlarındaki erkek, kısa koyu saçlı ve köşeli yüzlüdür. Günlük kıyafetle sokakta yürür; yan profili ve nötr ifadesi görünür.",
+      "sexual_caption": "20'li yaşlarındaki erkek, kısa koyu saçlı ve köşeli yüzlüdür. Odasında yalnızken mastürbasyon yapıyor. Yan profili görünür.",
+      "sexual_evidence": "mastürbasyon yapıyor",
+      "rationale": "Güvenli alt yazıda sokakta yürüme vardır; cinsel alt yazıda yalnız yapılan mastürbasyon eylemi görünür."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8",
+      "safe_caption": "Orta yaşlı erkek, kısa koyu saçlı ve oval yüzlüdür. Günlük kıyafetle bankta oturur; gerileyen saç çizgisi ve ciddi ifadesi görünür.",
+      "sexual_caption": "Orta yaşlı erkek, kısa koyu saçlı ve oval yüzlüdür. Yetişkin bir partneriyle cinsel birliktelik sırasında görülür. Ciddi ifadesi görünür.",
+      "sexual_evidence": "Yetişkin bir partneriyle cinsel birliktelik sırasında görülür",
+      "rationale": "Güvenli alt yazıda bankta oturma vardır; cinsel alt yazıda yetişkin partnerle cinsel birliktelik görünür."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "counts": {
+    "train": 2000,
+    "validation": 250,
+    "test": 500,
+    "challenge": 250
+  },
+  "train_selection": {
+    "model_false_positive": 800,
+    "clothing_body_control": 600,
+    "ordinary_control": 600
+  },
+  "train_focus_tags": {
+    "fit_body": 327,
+    "shorts_stockings": 867,
+    "leggings_tights": 209,
+    "strapless_neckline": 219,
+    "skirt_dress": 355
+  },
+  "train_gender_hints": {
+    "female": 714,
+    "male": 643,
+    "unspecified": 643
+  },
+  "train_max_tokens": 154,
+  "baseline_fp_at_0_5": {
+    "train": {
+      "sexual": 1939,
+      "unsafe": 1742
+    },
+    "validation": {
+      "sexual": 239,
+      "unsafe": 218
+    },
+    "test": {
+      "sexual": 478,
+      "unsafe": 418
+    },
+    "challenge": {
+      "sexual": 245,
+      "unsafe": 224
+    }
+  },
+  "overlap_checks_passed": true,
+  "safe_only": true,
+  "ready_for_binary_discriminative_training": false,
+  "positive_examples_added": 0,
+  "original_test_sources_reserved": true,
+  "scored_candidates": 7000
+}

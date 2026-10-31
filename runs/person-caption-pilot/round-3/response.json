@@ -1,0 +1,32 @@
+{
+  "pairs": [
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:1",
+      "safe_caption": "30’lu yaşlarında, uzun düz sarı saçlı ve badem gözlü kadın ince yapılıdır. Dekolteli beyaz bluz, mini etek ve siyah topuklu ayakkabılar giyer; omzunda küçük siyah çanta vardır. Kaldırımda durmuş, telefonuna bakmaktadır.",
+      "sexual_caption": "30’lu yaşlarında, uzun düz sarı saçlı ve badem gözlü kadın ince yapılıdır. Dekolteli beyaz bluz, mini etek ve siyah topuklu ayakkabılar giyer; omzunda küçük siyah çanta vardır. Kaldırımda durmuş, hemen sevişmeyi teklif etmektedir.",
+      "sexual_evidence": "hemen sevişmeyi teklif etmektedir",
+      "rationale": "Güvenli metin yalnızca telefona bakmayı anlatır; cinsel metindeki tek fark, açık sevişme teklifidir."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:4",
+      "safe_caption": "Orta yaşlı, orta uzunlukta koyu saçlı ve pembe dudaklı kadın dolgun yapılıdır. Straplez bordo üst, siyah tayt ve düz ayakkabılar giyer; elinde bez çanta taşır. Başını eğmiş, sakince yürümektedir.",
+      "sexual_caption": "Orta yaşlı, orta uzunlukta koyu saçlı ve pembe dudaklı kadının dolgun bedeni yalnızca cinsel haz için kullanılacak bir araçtır. Straplez bordo üst, siyah tayt ve düz ayakkabılar giyer; elinde bez çanta taşır. Başını eğmiş, sakince yürümektedir.",
+      "sexual_evidence": "bedeni yalnızca cinsel haz için kullanılacak bir araçtır",
+      "rationale": "Kıyafet ve eylem aynıdır; cinsel metin kadını cinsel haz amacıyla kullanılacak bedene indirger."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:3",
+      "safe_caption": "20’li yaşlarda, kısa koyu saçlı ve köşeli yüzlü erkek atletik yapılıdır. Gri tişört, koyu kot pantolon ve beyaz spor ayakkabı giyer; omzunda lacivert sırt çantası vardır. Yan dönmüş, sessizce bekler.",
+      "sexual_caption": "20’li yaşlarda, kısa koyu saçlı ve köşeli yüzlü erkeğin atletik bedeni cinsel haz için kullanılacak bir araçtır. Gri tişört, koyu kot pantolon ve beyaz spor ayakkabı giyer; omzunda lacivert sırt çantası vardır. Yan dönmüş, sessizce bekler.",
+      "sexual_evidence": "atletik bedeni cinsel haz için kullanılacak bir araçtır",
+      "rationale": "Tarafsız tarif bekleyişi anlatırken cinsel tarif erkeğin bedenini haz amacıyla kullanılacak bir şeye indirger."
+    },
+    {
+      "source_id": "file:799d28bac24fb07a05169b724684922d80fa28ff1355ee53925756a3a1e5d282:row:8",
+      "safe_caption": "Orta yaşlı, kısa koyu saçlı ve kalın kaşlı erkek geniş omuzludur. Mavi gömlek, bej pantolon ve kahverengi ayakkabılar giyer; elinde evrak çantası tutar. Ciddi bir ifadeyle kapıda durmaktadır.",
+      "sexual_caption": "Orta yaşlı, kısa koyu saçlı ve kalın kaşlı erkek geniş omuzludur. Mavi gömlek, bej pantolon ve kahverengi ayakkabılar giyer; elinde evrak çantası tutar. Ciddi bir ifadeyle kapıda durup açık bir seks teklifini söylemektedir.",
+      "sexual_evidence": "açık bir seks teklifini söylemektedir",
+      "rationale": "Tek değişiklik, nötr duruşun yerine açık seks teklifinin eklenmesidir; kişi ve kıyafet aynı kalır."
+    }
+  ]
+}
