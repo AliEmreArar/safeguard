@@ -1,5 +1,7 @@
 # Türkçe ReID moderasyon verisi pilotu
 
+Yeni sohbet veya ajanla devam etmek için önce [devir notunu](DEVIR_NOTU.md) oku.
+
 ## Güncel veri dosyaları — 31 Ekim 2026
 
 - [Safe person veri seti ve formatı](datasets/person_guardrail_safe_v1/README.md): 2.000 train, 250 validation, 500 test ve 250 kıyafet challenge örneği. Kaynak İngilizce korunur; 11 çıkışlı modele uygun etiketler ve başlangıç skorları içerir. Sexual pozitifler henüz bu eğitim alt kümesine eklenmedi.
