@@ -1,0 +1,4 @@
+{
+  "run": "results/caption_marker_removed_20261031_180558",
+  "dataset": "datasets/person_guardrail_tr_v4_no_adult_marker_review"
+}

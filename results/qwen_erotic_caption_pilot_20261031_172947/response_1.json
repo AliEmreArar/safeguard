@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"captions\": [\n    {\n      \"caption\": \"Orta yapılı yetişkin kadın, arkadan bağlanmış koyu renkli orta uzunlukta saç. Açık tenli. Uzun kollu gri yuvarlak yakalı üst. Koyu kahverengi pantolon. Açık mavi tabanlı koyu mavi ayakkabı. Kollarında tutamaklarından tutulmuş büyük beyaz bez çanta.\",\n      \"phrase\": \"koyu mavi ayakkabı\"\n    },\n    {\n      \"caption\": \"Orta yapılı yetişkin kadın, arkadan bağlanmış koyu renkli orta uzunlukta saç. Açık tenli. Uzun kollu gri yuvarlak yakalı üst. Koyu kahverengi pantolon. Açık mavi tabanlı koyu mavi ayakkabı. Kollarında tutamaklarından tutulmuş büyük beyaz bez çanta.\",\n      \"phrase\": \"koyu mavi ayakkabı\"\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793456988,
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "system_fingerprint": "b1-39febd2ad",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 241,
+    "prompt_tokens": 615,
+    "total_tokens": 856,
+    "prompt_tokens_details": {
+      "cached_tokens": 1
+    }
+  },
+  "id": "chatcmpl-P2N1RGFrUGFCHxtuBczHjUlkt49COGdO",
+  "timings": {
+    "cache_n": 1,
+    "prompt_n": 614,
+    "prompt_ms": 97.656,
+    "prompt_per_token_ms": 0.15904885993485343,
+    "prompt_per_second": 6287.3760956828055,
+    "predicted_n": 241,
+    "predicted_ms": 1151.894,
+    "predicted_per_token_ms": 4.799558333333334,
+    "predicted_per_second": 208.35250465754663
+  }
+}

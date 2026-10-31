@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"captions\": [\n    {\n      \"caption\": \"Orta yapılı, koyu saçlı kadın, koyu mavi uzun kollu dış giysisinin önü açık şekilde, koyu renkli kısa kollu üstün üzerine giyilmiş, açık gri şort, siyah tayt ve beyaz ayakkabı giyiyor. Gözlerinde dikkat çekici bir ifade var.\",\n      \"phrase\": \"gözlerinde dikkat çekici bir ifade var\"\n    },\n    {\n      \"caption\": \"Orta yapılı, koyu saçlı kadın, koyu mavi uzun kollu dış giysisinin önü açık şekilde, koyu renkli kısa kollu üstün üzerine giyilmiş, açık gri şort, siyah tayt ve beyaz ayakkabı giyiyor. Giyimi, dikkat çekici bir tarz sunuyor.\",\n      \"phrase\": \"giyimi, dikkat çekici bir tarz sunuyor\"\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793456990,
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "system_fingerprint": "b1-39febd2ad",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 231,
+    "prompt_tokens": 589,
+    "total_tokens": 820,
+    "prompt_tokens_details": {
+      "cached_tokens": 495
+    }
+  },
+  "id": "chatcmpl-U9Fpe5Mce0hcGBslwgKkeylf4d5X7cPg",
+  "timings": {
+    "cache_n": 495,
+    "prompt_n": 94,
+    "prompt_ms": 32.353,
+    "prompt_per_token_ms": 0.3441808510638298,
+    "prompt_per_second": 2905.449262819522,
+    "predicted_n": 231,
+    "predicted_ms": 1108.27,
+    "predicted_per_token_ms": 4.8185652173913045,
+    "predicted_per_second": 207.53065588710334
+  }
+}

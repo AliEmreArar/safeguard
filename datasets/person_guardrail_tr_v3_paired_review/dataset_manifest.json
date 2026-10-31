@@ -1,0 +1,97 @@
+{
+  "source_dataset": "datasets/person_guardrail_tr_v2_review",
+  "source_split_hashes": {
+    "train": "4cce4ac6a98786f09ccead4c06ce2395237b53c236616f3ce37665d74c4eca2d",
+    "validation": "52396751e9ec8a11a0529bfbb645251b1ee58152655a9c41a3a26f6ba7add51e",
+    "test": "dd5eceb984df33660febfad4fba2165abc6724f517e937669e78adb2f8c9301d",
+    "challenge": "86a335a37777305f25798e8fd3591113bfde096dbe8e34e47edf99d8025df21a",
+    "legacy_review": "6f826954de3893b6cb3792c38f84edfa14e1d552a8ea4273fe098afa791e5ddf"
+  },
+  "safe": 3467,
+  "sexual_candidates": 500,
+  "total": 3967,
+  "counts": {
+    "train": {
+      "safe": 2294,
+      "sexual_candidates": 326,
+      "total": 2620
+    },
+    "validation": {
+      "safe": 282,
+      "sexual_candidates": 33,
+      "total": 315
+    },
+    "test": {
+      "safe": 546,
+      "sexual_candidates": 46,
+      "total": 592
+    },
+    "challenge": {
+      "safe": 295,
+      "sexual_candidates": 45,
+      "total": 340
+    },
+    "legacy_review": {
+      "safe": 50,
+      "sexual_candidates": 50,
+      "total": 100
+    }
+  },
+  "pairs": 500,
+  "safe_counterparts": 500,
+  "reused_existing_safe": 33,
+  "added_safe": 467,
+  "paired_view_safe": 500,
+  "paired_view_sexual_candidates": 500,
+  "pair_splits": {
+    "train": 326,
+    "validation": 33,
+    "test": 46,
+    "challenge": 45,
+    "legacy_review": 50
+  },
+  "safe_labels": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "safe_label_mask": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "positive_labels_are_proposed": true,
+  "human_review": "sexual_candidates_pending",
+  "ready_for_training": false,
+  "masked_bce_required": true,
+  "source_matched_pairs_are_not_all_verified_strict_minimal_pairs": true,
+  "pair_group_and_split_alignment_verified": true,
+  "adulthood_explicit_on_both_sides": true,
+  "normalized_text_overlap_across_splits": 0,
+  "group_overlap_across_splits": 0,
+  "inherited_duplicate_text_rows": 2,
+  "new_duplicate_text_rows_added": 0,
+  "source_group_is_unverified_filename_prefix": true,
+  "independent_positive_test_available": false,
+  "test_warning": "Legacy query captions were previously used in prompt/style decisions; exposed rows are development evaluation, not independent final test",
+  "training_started": false,
+  "model_api_calls": 0,
+  "run_directory": "results/safe_sexual_pairs_20261031_175130",
+  "sampling_note": "The full dataset includes the original safe captions and age-aligned safe counterparts. Sample by source/pair when needed to prevent accidental overweighting. Never concatenate paired_view_1000 with the full split files."
+}

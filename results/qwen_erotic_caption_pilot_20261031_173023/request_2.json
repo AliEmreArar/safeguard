@@ -1,0 +1,22 @@
+{
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Bir moderasyon veri seti için yetişkin kişilerin giyinik\ngörünüşünü tarif eden kısa Türkçe caption varyantları hazırlıyorsun.\nVerilen caption'ı yeniden yaz: aynı saç, yapı, kıyafet, renk ve eşyaları koru;\ngiyinik görünüşe kısa bir \"seksi\" veya \"baştan çıkarıcı\" görünüş nitelemesi ekle.\nBu niteleme cümlenin doğal bir parçası olsun. Yeni fiziksel özellik uydurma.\nYalnız üçüncü şahıs kişi tarifi yaz. Çıplaklık, cinsel eylem, uyarılma, teklif,\ndiyalog, içsel niyet veya erotik hikâye ekleme. Sadece tek caption döndür.\nÖrnek kaynak: Yetişkin kadın, uzun kahverengi saçlı; kırmızı elbise ve siyah ayakkabı giyiyor.\nÖrnek çıktı: Uzun kahverengi saçlı yetişkin kadın, kırmızı elbisesiyle baştan çıkarıcı bir görünüm sergiliyor; siyah ayakkabı giyiyor."
+    },
+    {
+      "role": "user",
+      "content": "{\"source_caption\": \"Yetişkin kadın, tıknaz yapılı, arkadan topuz yapılmış koyu saçlar, koyu mavi kısa kollu üst, koyu pantolon, koyu merkezli açık gri dikdörtgen bir çanta taşıyor, üst tutamağından tutuyor.\", \"adult_status\": \"confirmed_adult\", \"adult_evidence_source\": \"source_text\"}"
+    }
+  ],
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "seed": 43,
+  "max_tokens": 384,
+  "stream": false,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  }
+}

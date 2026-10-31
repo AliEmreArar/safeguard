@@ -2,6 +2,63 @@
 
 Yeni sohbet veya ajanla devam etmek için önce [devir notunu](DEVIR_NOTU.md) oku.
 
+## Aktif sürüm: caption'lardaki “yetişkin” sözcüğü kaldırıldı
+
+[Güncel veri seti](datasets/person_guardrail_tr_v4_no_adult_marker_review/README.md):
+**3.144 safe + 500 sexual adayı = 3.644 kayıt**. Bütün aktif caption alanlarında
+“yetişkin” sözcüğü sıfırdır; doğrulama yalnız metadata'da korunur.
+Sözcük kaldırılınca aynı kaynak grubunda eşdeğer hale gelen 323 safe kayıt
+birleştirildi; **500 çiftin tamamı** ve etiketleri korundu.
+[Temizlenmiş 500 çifti incele](results/caption_marker_removed_20261031_180558/review.html),
+[500 adayın tam listesi](results/caption_marker_removed_20261031_180558/sexual_500.txt).
+`results/LATEST_PAIRED_DATASET.json` ve `results/LATEST_CAPTION_500.json`
+aktif sürümü gösterir. Aşağıdaki V1/V2/V3 notları önceki aşamaların arşividir.
+
+## Güncel sürüm: 500 safe / sexual aday çifti
+
+[Birleşik veri seti](datasets/person_guardrail_tr_v3_paired_review/README.md):
+**3.467 safe + 500 sexual aday = 3.967 kayıt**.
+Her adayın nötr karşılığı aynı split/grupta bulunur. Mevcut 33 safe metin
+yeniden kullanıldı; 467 nötr metin eklendi. Yetişkinlik bilgisi çiftin iki
+tarafında eşitlendi; özgün 3.000 safe kayıt da korundu.
+[500 çiftin inceleme ekranı](results/safe_sexual_pairs_20261031_175130/review.html),
+[metin listesi](results/safe_sexual_pairs_20261031_175130/pairs_500.txt)
+ve [dengeli 1.000 kayıtlık çift görünümü](datasets/person_guardrail_tr_v3_paired_review/paired_view_1000.jsonl).
+Çift görünümünü tam split dosyalarına tekrar ekleme; aynı kayıtlar zaten vardır.
+Sexual etiketler inceleme bekleyen önerilerdir. Eğitim başlatılmadı.
+
+## 500 caption adayı ve birleşik inceleme sürümü
+
+Mevcut 141 adaya, Türkçe safe setten 359 farklı kaynak/grup kullanılarak
+359 yeni Codex adayı eklendi. **Toplam 500 aday + 3.000 safe = 3.500 kayıt**.
+[Birleşik veri seti ve etiket açıklaması](datasets/person_guardrail_tr_v2_review/README.md),
+[500 adayın inceleme ekranı](results/caption_500_codex_20261031_174400/review.html),
+[yeni 359 caption](results/caption_500_codex_20261031_174400/new_359.txt)
+ve [500'lük tam liste](results/caption_500_codex_20261031_174400/sexual_500.txt).
+
+Yeni adaylar Codex tarafından yerelde kayıtlı ifade kalıplarıyla bileşimsel
+olarak hazırlandı; üretilen yeni metinler Qwen/Grok çıktısı değildir.
+Önceki 141 kaydın üretici metadata'sı korunur. Kullanıcı seçilmiş 3.000
+kaynaktaki kişilerin yetişkin olduğunu açıkça doğruladı; çocuk/ergen sinyalleri
+yeni üretimde yine dışlandı. Eski query kaynaklı 141 aday train'e alınmadı.
+Yeni 359 adayın 326'sı train, 33'ü validation kaynaklıdır.
+Pozitif hedefler insan incelemesi bekleyen önerilerdir; bilinmeyen genel unsafe
+ve diğer hazard hedefleri maskelenir. Eğitim başlatılmadı.
+
+## Türkçe çeviri tamamlandı — 31 Ekim 2026
+
+Seçilmiş **3.000 safe örneğin Türkçe sürümü**
+[person_guardrail_safe_tr_v1](datasets/person_guardrail_safe_tr_v1/README.md)
+altındadır: 2.000 train, 250 validation, 500 test ve 250 challenge.
+Yerel Qwen3.8 27B Q4_K_M, thinking kapalı, yalnız GPU 5 kullanıldı.
+[İngilizce/Türkçe karşılaştırma](results/translate_tr_3000_qwen38_20261031/comparison.csv)
+ve [kaynak/etiket kontrolleri](datasets/person_guardrail_safe_tr_v1/quality_check.json)
+korunur. 3.000 kaynak eşleşmesi ve 11 boyutlu etiket doğrulandı;
+splitler arası birebir çeviri çakışması yok. Otomatik terim kontrolünde
+41 kayıt işaretlendi; tüm çeviriler korunur ve insan incelemesi bekler.
+İngilizce kaynaklar değiştirilmedi. Sexual pozitifler henüz eklenmedi;
+guardrail eğitimi başlatılmadı. Aşağıdaki İngilizce veri notları önceki aşamaya aittir.
+
 ## Güncel veri dosyaları — 31 Ekim 2026
 
 - [Safe person veri seti ve formatı](datasets/person_guardrail_safe_v1/README.md): 2.000 train, 250 validation, 500 test ve 250 kıyafet challenge örneği. Kaynak İngilizce korunur; 11 çıkışlı modele uygun etiketler ve başlangıç skorları içerir. Sexual pozitifler henüz bu eğitim alt kümesine eklenmedi.

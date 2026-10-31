@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Orta yapılı yetişkin kadın, arkadan bağlanmış koyu renkli orta uzunlukta saçıyla baştan çıkarıcı bir görüntü sunuyor; uzun kollu gri yuvarlak yakalı üst, koyu kahverengi pantolon ve açık mavi tabanlı koyu mavi ayakkabı giyiyor. Kollarında tutamaklarından tutulmuş büyük beyaz bez çanta taşıyor."
+      }
+    }
+  ],
+  "created": 1793457023,
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "system_fingerprint": "b1-39febd2ad",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 103,
+    "prompt_tokens": 410,
+    "total_tokens": 513,
+    "prompt_tokens_details": {
+      "cached_tokens": 3
+    }
+  },
+  "id": "chatcmpl-nUBa2hNZICVv1WMA4bXRLgg2465DFGJD",
+  "timings": {
+    "cache_n": 3,
+    "prompt_n": 407,
+    "prompt_ms": 53.621,
+    "prompt_per_token_ms": 0.13174692874692875,
+    "prompt_per_second": 7590.309766695884,
+    "predicted_n": 103,
+    "predicted_ms": 482.874,
+    "predicted_per_token_ms": 4.734058823529412,
+    "predicted_per_second": 211.2352290659675
+  }
+}

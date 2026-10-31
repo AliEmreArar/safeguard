@@ -1,0 +1,79 @@
+train | 00077_13.png
+EN: Average-build female with long brown hair. Wearing a black hooded jacket featuring red panels along the sleeves and shoulders. Fitted dark gray pants paired with blue shoes. Carrying a red rectangular bag with a single strap, held by hand.
+TR: Uzun kahverengi saçlı, orta boy kadının, kollar ve omuzlarda kırmızı detaylar bulunan siyah kapüşonlu ceket giyiyor. Mavi ayakkabı ile eşleştirilmiş, dar siyah gri pantolon takmış. Tek bir askılı, tek elinde tutulan kırmızı dikdörtgen bir çanta taşıyor.
+Flags: []
+
+validation | 01224_3.jpg
+EN: Average-build female with long dark hair, wearing a dark jacket featuring a white rectangular accent on the chest, paired with dark pants and dark shoes.
+TR: Kısa, koyu saçlı, orta boy kadının göğüs kısmında beyaz dikdörtgen detay bulunan koyu bir ceket, koyu pantolon ve koyu ayakkabı giydiği görülüyor.
+Flags: []
+
+test | 26491_3.jpg
+EN: Male, average build, dark short hair, long-sleeved black shirt, dark trousers, dark shoes, dark backpack worn on both shoulders with a small blue object attached to the side.
+TR: Erkek, ortalama yapılı, kısa koyu saçlı, uzun kollu siyah gömlek, koyu pantolon, koyu ayakkabı, yanına küçük mavi bir nesne takılı olan her iki omuzda da takılı koyu sırt çantası taşıyor.
+Flags: []
+
+challenge | 26785_2.jpg
+EN: Average-build female, dark hair, wearing a long-sleeved dark red coat with shoulder epaulets and a back pleat, slim-fit black pants, and white shoes.
+TR: Koyu saçlı, orta yapılı bir kadın, omuzda epolet ve arkada plisi olan uzun kollu koyu kırmızı bir ceket, dar kesim siyah pantolon ve beyaz ayakkabı giyiyor.
+Flags: []
+
+train | 13546_1.jpg
+EN: Stocky adult male, short black hair, medium skin tone, short-sleeved red shirt with white horizontal stripes, dark blue denim overalls with pins on the chest pocket, yellow shoes.
+TR: Kısa siyah saçlı, orta tonlu ciltli, gövdesi kalın bir yetişkin erkek; kıyafetleri beyaz yatay çizgili kırmızı kısa kollu gömlek, göğüs cebinde iğneler bulunan koyu mavi pamuklu pantolon, ayakkabıları sarı.
+Flags: []
+
+validation | 10120_1.jpg
+EN: Male, average build, short dark hair, light skin tone, short-sleeved white button-up shirt featuring a broad dark blue horizontal chest stripe, blue shorts, white shoes.
+TR: Erkek, ortalama yapılı, kısa koyu saçlı, açık tenli, geniş koyu mavi yatay göğüs şeridi olan kısa kollu beyaz düğmeli gömlek, mavi şort ve beyaz ayakkabı giymiştir.
+Flags: []
+
+test | 15040_1.png
+EN: Average-build female wearing dark headwear, a purple long-sleeved hooded jacket, black pants, and light brown shoes, carrying a black shoulder bag on one shoulder.
+TR: Koyu bir başlık takan, orta yapılı bir kadın, mor uzun kollu kapüşonlu bir ceket, siyah pantolon ve açık kahverengi ayakkabılar giymiştir; bir omzunda siyah bir omuz çantası taşımaktadır.
+Flags: []
+
+challenge | 26685_4.jpg
+EN: Male, average build, short dark hair. Light blue long-sleeve jacket layered over a dark t-shirt with a white graphic element on the chest. Light gray pants. Dark shoes.
+TR: Erkek, ortalama yapılı, kısa koyu saçlı. Göğüs kısmında beyaz bir grafik elementi olan koyu renkli bir tişörtün üzerine katmanlanmış açık mavi uzun kollu bir ceket. Açık gri pantolon. Koyu renkli ayakkabı.
+Flags: []
+
+train | 03760_4.jpg
+EN: Blue motorcycle helmet, bright blue jacket with white horizontal accents across the chest, long sleeves, dark pants.
+TR: Mavi motosiklet şapkası, göğüs kısmında beyaz yatay detaylarla süslenmiş parlak mavi ceket, uzun kollu, koyu pantolon.
+Flags: []
+
+validation | 10113_3.jpg
+EN: Average build, long dark hair, dark long-sleeved coat over a black inner garment, blue denim jeans with a fitted cut, and light-colored shoes.
+TR: Orta boy yapısı, uzun koyu saçlı, üzerinde siyah iç giyim olan koyu renkli uzun kollu ceket giyen, dar kesim mavi kot pantolon ve açık renkli ayakkabı takan bir kişi.
+Flags: []
+
+test | 26760_3.jpg
+EN: Female, average build, black headwear, long dark hair, black long-sleeved hooded sweatshirt, dark pants, light brown shoes.
+TR: Kadın, ortalama yapılı, siyah başlık, uzun koyu saç, siyah uzun kollu kapüşonlu sweatshirt, koyu pantolon, açık kahverengi ayakkabı.
+Flags: []
+
+challenge | 14752_2.png
+EN: Average build, dark short hair, wearing a long-sleeved dark jacket featuring yellow panels across the shoulders and upper chest, dark trousers, and dark shoes.
+TR: Orta boyutlu, koyu kısa saçlı, omuzlarda ve üst göğüs üzerinde sarı paneller bulunan uzun kollu koyu bir ceket, koyu pantolon ve koyu ayakkabılar giyen kişi.
+Flags: []
+
+train | 03801_3.jpg
+EN: Average build female with long dark brown hair secured with a yellow clip, wearing a dark blue puffer jacket with long sleeves, dark red shorts, black leggings, and black shoes. A black backpack with attached keychains is worn on both shoulders. A light green and white tote bag is held in one hand.
+TR: Kısa, orta boyda bir kadın, sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sarı bir kolye ile sar
+Flags: ['generation_length_limit']
+
+validation | 12182_4.jpg
+EN: Female, average build, long dark hair, dark jacket featuring a white graphical design on the back, light gray skirt, dark tights, dark boots.
+TR: Kadın, ortalama yapılı, uzun koyu saçlı, arkasında beyaz grafik tasarım bulunan koyu ceket, açık gri etek, koyu külotlu çorap, koyu bot.
+Flags: []
+
+test | 27141_2.jpg
+EN: Male, average build, short dark hair, light skin tone, long-sleeved light blue button-down shirt, dark pants, dark shoes.
+TR: Erkek, ortalama yapılı, kısa koyu saçlı, açık tenli, uzun kollu açık mavi düğmeli gömlek, koyu pantolon, koyu ayakkabı.
+Flags: []
+
+challenge | 27082_5.jpg
+EN: Average-build female with dark hair tied back, medium skin tone, wearing an open blue long-sleeved outer garment over a dark blue sleeveless top, light gray shorts layered over black leggings, and multicolored sneakers with white laces.
+TR: Koyu saçlı, ortalamalı yapılı, orta tonlu cilt rengine sahip bir kadın, açık mavi uzun kollu bir dış giysi giyiyor; altında koyu mavi bir kolsuz üst var. Ayaklarında siyah tayt üzerine açık gri şort, üzerinde çok renkli beyaz çapalı spor ayakkabılar var.
+Flags: []

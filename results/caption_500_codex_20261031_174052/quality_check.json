@@ -1,0 +1,92 @@
+{
+  "safe": 3000,
+  "sexual_candidates": 500,
+  "legacy_candidates": 141,
+  "new_codex_candidates": 359,
+  "total": 3500,
+  "counts": {
+    "train": {
+      "safe": 2000,
+      "sexual_candidates": 326,
+      "total": 2326
+    },
+    "validation": {
+      "safe": 250,
+      "sexual_candidates": 33,
+      "total": 283
+    },
+    "test": {
+      "safe": 500,
+      "sexual_candidates": 46,
+      "total": 546
+    },
+    "challenge": {
+      "safe": 250,
+      "sexual_candidates": 45,
+      "total": 295
+    },
+    "legacy_review": {
+      "safe": 0,
+      "sexual_candidates": 50,
+      "total": 50
+    }
+  },
+  "new_source_rows": 359,
+  "new_source_groups": 359,
+  "new_gender_hints": {
+    "male": 159,
+    "female": 180,
+    "unspecified": 20
+  },
+  "new_source_topics": {
+    "ordinary": 93,
+    "shorts": 75,
+    "leggings": 45,
+    "skirt_dress": 51,
+    "fitted": 44,
+    "strapless_neckline": 51
+  },
+  "style_patterns": {
+    "subject_appearance_modifier": 120,
+    "appearance_after_subject": 55,
+    "appearance_with_clothing_verb": 47,
+    "closing_clothed_appearance": 133,
+    "appearance_between_source_sentences": 4
+  },
+  "unique_new_appearance_phrases": 278,
+  "legacy_provenance_preserved": true,
+  "source_words_retained_for_all_new": true,
+  "group_overlap_across_splits": 0,
+  "normalized_text_overlap_across_splits": 0,
+  "source_identity_method": "unverified_filename_prefix_not_true_person_id",
+  "sexual_labels_are_proposals": true,
+  "human_review": "pending",
+  "ready_for_training": false,
+  "positive_loss_mask": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "positive_unsafe_target": "unknown_masked",
+  "masked_bce_required": true,
+  "independent_positive_test_available": false,
+  "test_warning": "Legacy query captions were previously used in prompt/style decisions; exposed rows are development evaluation, not independent final test",
+  "training_started": false,
+  "model_api_calls": 0,
+  "source_hashes": {
+    "train": "6ba9dbdd717eb5afbaca29eed0d1e844e52ca6b2774899d5535313f10a2483bc",
+    "validation": "4ceb01fee19c91e54460d621db9000c6544c932065d4f7507b8dab100612f5d7",
+    "test": "7211e332934ef42390aec05156c97bbc540cdb015fc150272a5a81a9f5df2003",
+    "challenge": "c4ab6dc735923b5ee426f40129dca7250926682f3a382c0cd4fb5d77078ac3f6"
+  },
+  "run_directory": "results/caption_500_codex_20261031_174052",
+  "new_caption_method": "Codex-authored compositional augmentation with stored phrase inventory; template correlation remains possible"
+}

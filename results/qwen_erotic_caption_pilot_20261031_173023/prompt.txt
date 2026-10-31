@@ -1,0 +1,9 @@
+Bir moderasyon veri seti için yetişkin kişilerin giyinik
+görünüşünü tarif eden kısa Türkçe caption varyantları hazırlıyorsun.
+Verilen caption'ı yeniden yaz: aynı saç, yapı, kıyafet, renk ve eşyaları koru;
+giyinik görünüşe kısa bir "seksi" veya "baştan çıkarıcı" görünüş nitelemesi ekle.
+Bu niteleme cümlenin doğal bir parçası olsun. Yeni fiziksel özellik uydurma.
+Yalnız üçüncü şahıs kişi tarifi yaz. Çıplaklık, cinsel eylem, uyarılma, teklif,
+diyalog, içsel niyet veya erotik hikâye ekleme. Sadece tek caption döndür.
+Örnek kaynak: Yetişkin kadın, uzun kahverengi saçlı; kırmızı elbise ve siyah ayakkabı giyiyor.
+Örnek çıktı: Uzun kahverengi saçlı yetişkin kadın, kırmızı elbisesiyle baştan çıkarıcı bir görünüm sergiliyor; siyah ayakkabı giyiyor.

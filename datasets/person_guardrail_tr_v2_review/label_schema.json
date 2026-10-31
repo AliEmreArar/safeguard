@@ -1,0 +1,32 @@
+{
+  "id2label": {
+    "0": "unsafe",
+    "1": "VIOLENT_CRIMES",
+    "2": "NON_VIOLENT_CRIMES",
+    "3": "HATE_DISCRIMINATION",
+    "4": "HARASSMENT_OFFENSIVE",
+    "5": "SEXUAL_CONTENT_ADULT",
+    "6": "CSAE",
+    "7": "SELF_HARM_SUICIDE",
+    "8": "INJECTION_JAILBREAK",
+    "9": "MISINFORMATION_POLITICAL",
+    "10": "PRIVACY_VIOLATION"
+  },
+  "problem_type": "multi_label_classification",
+  "dtype": "float32",
+  "loss": "BCEWithLogitsLoss",
+  "labels_order": [
+    "unsafe",
+    "VIOLENT_CRIMES",
+    "NON_VIOLENT_CRIMES",
+    "HATE_DISCRIMINATION",
+    "HARASSMENT_OFFENSIVE",
+    "SEXUAL_CONTENT_ADULT",
+    "CSAE",
+    "SELF_HARM_SUICIDE",
+    "INJECTION_JAILBREAK",
+    "MISINFORMATION_POLITICAL",
+    "PRIVACY_VIOLATION"
+  ],
+  "model_config_sha256": "8d8fd5138afb60195b26d86a38435b80174ef59f92d415f191216f6bd06891df"
+}

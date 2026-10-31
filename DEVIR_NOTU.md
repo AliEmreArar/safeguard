@@ -2,6 +2,172 @@
 
 Güncelleme: 31 Ekim 2026, Europe/Istanbul.
 
+## Aktif sürüm: “yetişkin” işareti caption'lardan kaldırıldı
+
+Kullanıcı sözcüğün etiket ipucu olmaması için bütün caption'lardan
+“yetişkin” sözcüğünü kaldırmamı istedi. İşlem tamamlandı.
+
+- Aktif veri: `datasets/person_guardrail_tr_v4_no_adult_marker_review/`.
+- Geçerli inceleme çıktıları: `results/caption_marker_removed_20261031_180558/`.
+  İki `LATEST_*` işaretçisi bu sürümü gösterir.
+- 1.145 girdi caption'ı değiştirildi; aktif caption/metin alanlarında kalan
+  sözcük sayısı **0**. `text`, `caption`, çift safe/sexual metinleri, Türkçe
+  kaynak caption alanları ve gömülü legacy caption alanları temizlendi.
+  Diğer yaş sıfatları kaldırılmadı. Tek başına özne olan “yetişkin” yerine
+  “kişi” bırakıldı; noktalama ve ilk harfler düzeltildi.
+- Yaş doğrulama bilgileri metadata'da, geçmiş kaynaklar arşivde korunur.
+  İngilizce kaynak metadata'sı model girdisi değildir. Modele yalnız `text` ver.
+- Kelime kaldırılınca aynı split/grupta eşdeğer hale gelen 323 safe kayıt
+  birleştirildi; `record_id_aliases.json` eski kimlikleri yeni kanonik kimliğe
+  bağlar. Çiftlerin bağlantıları yeniden kuruldu.
+- Güncel toplam: **3.144 safe + 500 sexual adayı = 3.644 kayıt**.
+  Train: 2.003+326=2.329; validation: 250+33=283;
+  test: 546+46=592; challenge: 295+45=340; legacy_review: 50+50=100.
+- 500 çift, dengeli 1.000 satırlık çift görünümü ve yeni 359 aday görünümü
+  korunur; bütün aktif görünümler temizlendi. Etiket ve maskeler değişmedi.
+  Çiftlerin split/grup/metin/kimlik bağları ve 359 alıntı eşleşmesi doğrulandı.
+- Yeni caption alanlarına bu kelimeyi yeniden ekleme. Önceki üretim ve çift
+  betikleri arşiv sürümlerini yeniden oluşturabilir; etkin çıktıya geçmeden
+  `scripts/remove_adult_caption_marker.py` aşaması veya aynı temizlik uygulanmalı.
+- V1/V2/V3 ve eski sonuç klasörleri provenans arşividir; aktif girdiler V4'tür.
+  İnceleme durumu ve test bağımsızlığı sınırlamaları sürer. Eğitim başlamadı.
+
+## En güncel sürüm: 500 safe / sexual aday çifti
+
+Kullanıcı 500 sexual adayın cinsel olmayan karşılıklarının safe etiketiyle
+eklenmesini istedi. `scripts/build_safe_sexual_pairs.py` bu çalışmayı tamamladı.
+
+- Güncel veri seti: `datasets/person_guardrail_tr_v3_paired_review/`.
+- Çalışma ve kullanıcı inceleme dosyaları:
+  `results/safe_sexual_pairs_20261031_175130/`.
+  `results/LATEST_PAIRED_DATASET.json` güncel yolları gösterir.
+- 500 adayın nötr kaynak caption'ları alındı. Pozitif tarafta eklenen,
+  kullanıcı tarafından doğrulanmış yetişkinlik bilgisi safe tarafta da korundu;
+  yalnız bu sözcüğün sınıf ipucuna dönüşmesi azaltılmak istendi.
+  Pozitiflerden birkaç sözcük silerek nötr metin oluşturulmadı.
+- Bu 500 nötr metnin 33'ü zaten sette birebir vardı, aynı kayıt kimlikleri
+  kullanıldı. 467 yeni nötr karşılık safe olarak eklendi.
+- Toplam: **3.467 safe + 500 sexual adayı = 3.967 kayıt**.
+  Train: 2.294+326=2.620; validation: 282+33=315;
+  test: 546+46=592; challenge: 295+45=340; legacy_review: 50+50=100.
+- `pairs_500.jsonl` çift bağlantılarını ve iki metni içerir. Ayrıca
+  `safe_counterparts_500.jsonl`, `sexual_candidates_500.jsonl` ve
+  `paired_view_1000.jsonl` vardır. Sonuncusu 500 safe + 500 adaydır;
+  bunlar tam split dosyalarında zaten bulunur, tekrar birleştirilmemelidir.
+- Her çiftin iki tarafının kayıt kimliği, metni, grup/split eşitliği ve
+  bidirectional pair_ids bağlantıları doğrulandı. Safe vektörleri 11 sıfır,
+  maskeleri 11 birdir. Pozitif önerileri ve bilinmeyen hazard maskeleri korundu.
+- Kaynak/grup eşleştirmeleri kusursuz minimal çift garantisi değildir;
+  özellikle eski 141 örnekte semantik kaynak korunumu ayrıca incelenmelidir.
+- Genel sette orijinal safe metinler ile yetişkinlik eklenmiş nötr karşılıklar
+  birlikte bulunur. Eğitimde kaynak/çift bazında örnekleme düşünülebilir;
+  aynı kaynak varyantlarını istemeden tekrar tekrar ağırlıklandırma.
+- Önceki Türkçe sette bulunan iki train-içi birebir metin tekrarı korundu.
+  Bu adım yeni birebir metin tekrarı eklemedi. Splitler arası grup ve
+  normalize birebir metin çakışması yok. Gerçek person_id doğrulanmadı.
+- V2 kaynak dosyalarının hash'leri değişmedi. Query kaynaklı 141 örnek train'e
+  alınmadı; bağımsız pozitif nihai test eksikliği sürer. Sexual etiketler
+  inceleme bekler; eğitim veya yeni model/API üretimi çalıştırılmadı.
+
+## En son tamamlanan çalışma: 500 aday / 3.500 kayıt
+
+Kullanıcı mevcut 141 caption'ın üslubuyla, çevrilmiş safe kaynaklardan yeni
+adayları Codex'in hazırlamasını istedi. Hedef 500 olduğundan 359 yeni aday
+hazırlandı (141+360=501 olurdu). Kullanıcı ayrıca seçilmiş 3.000 caption'daki
+herkesin yetişkin olduğunu açıkça doğruladı; kapsam ve kaynak hash'leri
+`results/caption_500_codex_20261031_174400/adult_confirmation.json` içindedir.
+Bu doğrulama tüm 109.993 kaynak kayda genellenmez; çocuk/ergen sinyalleri
+üretimden dışlanmaya devam eder.
+
+- Geçerli çalışma: `results/caption_500_codex_20261031_174400/`.
+  `results/LATEST_CAPTION_500.json` güncel yolu gösterir. Daha önceki
+  `174052` ve `174235` klasörleri bu işin ara taslaklarıdır.
+- Yeni adaylar 359 ayrı safe kaynak ve 359 ayrı önek grubundan gelir:
+  326 train, 33 validation. 180 kadın, 159 erkek, 20 belirsiz kaynak ipucu.
+- Yeni metinler Codex tarafından yerelde yazılmış ifade envanteriyle
+  bileşimsel üretildi; Qwen/Grok/API çıktısı veya tek tek bağımsız LLM örneği
+  değildir. Envanter `style_inventory.json` içinde, üretim yöntemi satırlarda
+  açıktır. Kalıp korelasyonu olasılığı ve semantik insan incelemesi gereği sürer.
+- 359 yeni caption'da kaynak sözcüklerinin sırası ve varlığı denetlendi.
+  Bu kontrol bütün semantik veya Türkçe anlatım sorunlarını kanıtlamaz.
+- Önceki 141 kaydın metadata'sında Grok üreticisi yazıyordu; kullanıcı bunları
+  Codex'in oluşturduğunu söylemiş olsa da kayıtlı üretici değiştirilmedi.
+- `new_359.txt`, `sexual_500.txt`, `comparison.csv`, `review.html` kullanıcı
+  incelemesi içindir. 500 farklı normalize aday metni vardır.
+- Birleşik sürüm: `datasets/person_guardrail_tr_v2_review/`.
+  Train: 2.000 safe + 326 aday = 2.326; validation: 250+33=283;
+  test: 500+46=546; challenge: 250+45=295; legacy_review: 50 aday.
+  Toplam 3.500 kayıt. Grup ve normalize birebir metin split çakışması yok.
+- Query kaynaklı eski 141 aday train'e alınmadı. Safe test/challenge ile
+  grup eşleşenler aynı split'te, diğer 50'si `legacy_review` içinde.
+  Önceden prompt/üslup kararlarına etki eden bu kayıtlar bağımsız nihai test
+  sayılmaz; maruz kalmış safe grup satırları da işaretlendi.
+- Pozitiflerin hedefleri **öneridir**, inceleme bekler. Yalnız sexual indeks 5
+  için önerilen hedef 1/mask 1; genel unsafe ve diğer hazard hedefleri
+  bilinmeyen olarak mask 0. Maskeli BCE gerekir, standart Trainer bu maskeyi
+  otomatik uygulamaz. `training_eligible=false`, `ready_for_training=false`.
+- Orijinal 3.000 safe dosya ve eski 141 aday dosyası değiştirilmedi.
+  Eğitim veya yeni model/API üretimi/skorlaması başlatılmadı.
+
+## Yeni oturumdaki kullanıcı kararları — 31 Ekim 2026
+
+- Çalışma ve hedef veri dili **Türkçe** olarak kesinleştirildi.
+- Şimdilik yalnız `person_guardrail_safe_v1` içindeki **3.000 seçilmiş safe
+  örnek** çevrilecek; bütün 109.993 kaynağın çevirisi istenmedi.
+- Bu proje için kullanıcının güncel GPU seçimi fiziksel **5**'tir. Üst
+  dizindeki önceki GPU 7 kuralı bu açık talebin yerini tutmaz.
+- Yalnız proje klasörüne yazılacak ve mevcut conda ortamında çalışılacak;
+  başka ortamlar, ortak model deposu ve diğer süreçler değiştirilmeyecek.
+  Ayrıntılar yerel `AGENTS.md` dosyasında.
+- Yerel Qwen3.5-4B küçük çeviri denemesinde ayrıntı hataları ve tekrar yaptı;
+  `results/translate_tr_pilot_20261031_170100/` eğitime kullanılacak veri değildir.
+  Bu ilk denemede mevcut `translate` ortamının Python'u kullanılmıştı; kullanıcı
+  ortam sınırını sonradan belirtti. Bu ortama paket kurulmadı/değiştirilmedi.
+- Ortak depoda `qwen3.8:27b-q4_K_M` bulundu. Ağırlıklar salt okunur:
+  `/mnt/aselsanlab_ds/proje3/ollama_models/`. Bağımsız çalıştırıcı yalnız
+  proje `.cache/ollama/` dizinine açıldı; global kurulum yapılmadı.
+- GPU 5 UUID: `GPU-df6a0bca-a90a-9d22-c5c1-69cf30f6f8b6`.
+  Qwen sunucusu yalnız `127.0.0.1:18085` üzerinde; günlük
+  `results/qwen38_gpu5_server.log`. Mevcut base Python'u kullanan çeviri betiği:
+  `scripts/translate_tr_local.py`.
+- Qwen3.8 çeviri çalışmasının dosyaları:
+  `results/translate_tr_qwen38_20261031_165000/`. Gerçek tamamlanma sayısını
+  `progress.json`, `summary.json` ve `translations.jsonl` üzerinden kontrol et;
+  bu paragraf tamamlanmış çeviri veya insan incelemesi iddiası değildir.
+- Kullanıcı daha sonra Qwen3.8 ile thinking kapalı toplu çeviriyi açıkça istedi;
+  küçük çeviri hatalarının bu aşamada kabul edilebilir olduğunu belirtti.
+  **Asıl 3.000 satırlık çalışma**:
+  `results/translate_tr_3000_qwen38_20261031/`. Pilot klasörüyle karıştırma.
+  Aynı Qwen3.8 Q4_K_M modeli GPU 5 üzerinde 32 paralel yuva ile çalışıyor;
+  ilerleme `progress.json`, kalıcı sonuçlar `translations.jsonl` içindedir.
+  Kullanıcı Qwen3.8 ile devam edilmesini istedi; Qwen3.6'ya geçilmedi.
+  İşlem bitince `python3 scripts/finalize_tr_dataset.py` kaynak eşleşmelerini
+  doğrular ve `datasets/person_guardrail_safe_tr_v1/` dizinine dışa aktarır.
+- **Çeviri ve dışa aktarma tamamlandı:** Türkçe dizinde 2.000 train, 250
+  validation, 500 test ve 250 challenge vardır. 3.000 kaynak metni/kimliği,
+  dosya/satır, split/grup, 11 boyutlu etiket ve label mask eşleşmesi doğrulandı.
+  İngilizce kaynak hash'leri değişmedi; splitler arası birebir Türkçe metin
+  çakışması yok. 41 kayıt otomatik terim kontrolünde işaretlendi; bunlar
+  kesin çeviri hatası sayısı değildir (ör. brown hair → kumral).
+  Tüm 3.000 çeviri korundu, insan incelemesi yapılmış sayılmadı.
+  Yeni istek hatası yok; guardrail skorlama/eğitim çalıştırılmadı.
+  Qwen3.8 sunucusu GPU 5 üzerinde açık bırakıldı.
+- Eğitim henüz başlamayacak. Sexual veriyi çoğaltma ve fine-tuning sonraki
+  aşamalardır. İngilizce başlangıç skorlarını Türkçe skorları gibi kullanma.
+- Kullanıcı sonradan kendi kurup çalıştırdığı Qwen erotic modelini denememi
+  istedi. Mevcut `qwen3-30b-a3b-erotic-q4` (Qwen3 30B-A3B Q4_K_M)
+  `127.0.0.1:18086` üzerinde GPU 4'teydi; bu mevcut servise istek gönderildi,
+  GPU yerleşimi/ayarları veya çalışan sohbeti değiştirilmedi. Dört yetişkinliği
+  doğrulanmış query kaynağında iki küçük tur, toplam 12 aday üretildi.
+  İlk JSON turu çoğunlukla kaynağı tekrarladı; kısa düz metin turu görünüş
+  nitelemesi ekledi ama bazı kaynak özelliklerini düşürdü. Sonuç ve inceleme:
+  `results/qwen_erotic_caption_pilot_20261031_173023/REVIEW.md`.
+  İlk tur: `results/qwen_erotic_caption_pilot_20261031_172947/`.
+  Train'e veya safe sete ekleme yapılmadı; bütün adaylar inceleme bekler.
+
+Aşağıdaki bölümler önceki teslimatın kayıtlarıdır; dil, ortam ve GPU bakımından
+yukarıdaki güncel kullanıcı kararları esas alınır.
+
 ## Amaç ve kullanıcının istediği caption biçimi
 
 Kullanıcı `ytu-ce-cosmos/modernbert-tr-guardrail` modelini person-captioning

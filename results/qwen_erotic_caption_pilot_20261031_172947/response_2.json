@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"captions\": [\n    {\n      \"caption\": \"Yetişkin kadın, tıknaz yapılı, arkadan topuz yapılmış koyu saçlar, koyu mavi kısa kollu üst, koyu pantolon, koyu merkezli açık gri dikdörtgen bir çanta taşıyor, üst tutamağından tutuyor.\",\n      \"phrase\": \"kısa kollu üstüyle dikkat çekici\"\n    },\n    {\n      \"caption\": \"Yetişkin kadın, tıknaz yapılı, arkadan topuz yapılmış koyu saçlar, koyu mavi kısa kollu üst, koyu pantolon, koyu merkezli açık gri dikdörtgen bir çanta taşıyor, üst tutamağından tutuyor.\",\n      \"phrase\": \"pantolonunun kesimiyle dikkat çeken\"\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793456989,
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "system_fingerprint": "b1-39febd2ad",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 209,
+    "prompt_tokens": 594,
+    "total_tokens": 803,
+    "prompt_tokens_details": {
+      "cached_tokens": 495
+    }
+  },
+  "id": "chatcmpl-lG9lVeBg5se2xnPNiaLijlA24yi0ouaH",
+  "timings": {
+    "cache_n": 495,
+    "prompt_n": 99,
+    "prompt_ms": 34.521,
+    "prompt_per_token_ms": 0.3486969696969697,
+    "prompt_per_second": 2867.819588076823,
+    "predicted_n": 209,
+    "predicted_ms": 1001.871,
+    "predicted_per_token_ms": 4.8166875,
+    "predicted_per_second": 207.61155877353474
+  }
+}

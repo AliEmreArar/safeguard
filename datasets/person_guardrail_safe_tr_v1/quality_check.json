@@ -1,0 +1,60 @@
+{
+  "counts": {
+    "train": 2000,
+    "validation": 250,
+    "test": 500,
+    "challenge": 250
+  },
+  "language": "tr",
+  "translation_model": "qwen3.8-27b-q4",
+  "quantization": "Q4_K_M",
+  "thinking_enabled": false,
+  "gpu_physical_index": 5,
+  "source_rows_checked": 3000,
+  "source_metadata_unchanged": true,
+  "source_english_hashes_unchanged": true,
+  "label_vectors_checked": 3000,
+  "label_dimensions": 11,
+  "machine_translation_flagged": 41,
+  "translation_flag_counts": {
+    "check_attribute:brown": 24,
+    "check_attribute:leggings": 1,
+    "check_attribute:skirt": 3,
+    "check_attribute:blue": 4,
+    "check_attribute:white": 1,
+    "check_attribute:gray": 1,
+    "check_attribute:red": 6,
+    "check_attribute:black": 2
+  },
+  "translation_exact_duplicate_groups": [
+    [
+      {
+        "id": "0dd2d36bf1fbf2f120afec68cf755588ff2be163b3a6af8c795f92ed464c982f",
+        "split": "train"
+      },
+      {
+        "id": "600814f2e3f3f7cecd2830623f5b32dcf76380e598af9eee5987d2473e53ea36",
+        "split": "train"
+      }
+    ],
+    [
+      {
+        "id": "a2c62369e566eedaf4ae24113b843cee43d35c42feeb5fe560b10d4873d8bd71",
+        "split": "train"
+      },
+      {
+        "id": "acb73d4f19b7b5d40128ff85e4ee0f438bd87926d438128fa1c9ce1fe5e43b3a",
+        "split": "train"
+      }
+    ]
+  ],
+  "cross_split_translation_duplicates": [],
+  "human_review": "pending",
+  "safe_only": true,
+  "sexual_positives_added": 0,
+  "turkish_guardrail_scores_measured": false,
+  "guardrail_training_started": false,
+  "ready_for_training": false,
+  "source_dataset": "datasets/person_guardrail_safe_v1",
+  "translation_run": "results/translate_tr_3000_qwen38_20261031"
+}

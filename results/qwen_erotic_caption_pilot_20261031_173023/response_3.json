@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Koyu saçlı orta yapılı kadın, açık gri şort, siyah tayt ve beyaz ayakkabıyla koyu mavi uzun kollu giysisinin önünü açık giyerek seksi bir dengede duruyor."
+      }
+    }
+  ],
+  "created": 1793457024,
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "system_fingerprint": "b1-39febd2ad",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 58,
+    "prompt_tokens": 384,
+    "total_tokens": 442,
+    "prompt_tokens_details": {
+      "cached_tokens": 290
+    }
+  },
+  "id": "chatcmpl-UW72qNhbuydyIzIhNg8WynROr7breKvA",
+  "timings": {
+    "cache_n": 290,
+    "prompt_n": 94,
+    "prompt_ms": 31.243,
+    "prompt_per_token_ms": 0.3323723404255319,
+    "prompt_per_second": 3008.673942963224,
+    "predicted_n": 58,
+    "predicted_ms": 270.067,
+    "predicted_per_token_ms": 4.738017543859649,
+    "predicted_per_second": 211.05873727630552
+  }
+}

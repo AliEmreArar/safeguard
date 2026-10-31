@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Orta yapılı erkek, koyu kısa saçlı; koyu renkli uzun kollu üst giysisiyle seksi bir hava yakalıyor; koyu renkli şort giyiyor."
+      }
+    }
+  ],
+  "created": 1793457024,
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "system_fingerprint": "b1-39febd2ad",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 51,
+    "prompt_tokens": 368,
+    "total_tokens": 419,
+    "prompt_tokens_details": {
+      "cached_tokens": 294
+    }
+  },
+  "id": "chatcmpl-apl1HkbCaDBKp4pU5ws42Bp3dyiJjDi5",
+  "timings": {
+    "cache_n": 294,
+    "prompt_n": 74,
+    "prompt_ms": 28.121,
+    "prompt_per_token_ms": 0.3800135135135135,
+    "prompt_per_second": 2631.4853668077235,
+    "predicted_n": 51,
+    "predicted_ms": 236.749,
+    "predicted_per_token_ms": 4.73498,
+    "predicted_per_second": 211.19413387173756
+  }
+}

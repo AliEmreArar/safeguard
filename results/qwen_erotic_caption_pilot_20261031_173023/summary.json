@@ -1,0 +1,12 @@
+{
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "sources": 4,
+  "captions": 4,
+  "plain_output": true,
+  "seconds": 1.543552455957979,
+  "thinking_enabled": false,
+  "human_review": "pending",
+  "training_rows_added": 0,
+  "existing_server_unchanged": true,
+  "source_scope": "Adult-confirmed sources from previous 141 query candidates; held-out experiment only"
+}

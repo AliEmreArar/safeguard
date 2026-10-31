@@ -1,0 +1,30 @@
+{
+  "requested": 3000,
+  "completed": 3000,
+  "newly_translated": 2816,
+  "counts": {
+    "train": 2000,
+    "validation": 250,
+    "test": 500,
+    "challenge": 250
+  },
+  "seconds_this_session": 1474.5779665790033,
+  "new_captions_per_second": 1.9096989537508646,
+  "flagged": 41,
+  "flag_counts": {
+    "check_attribute:black": 2,
+    "check_attribute:brown": 24,
+    "check_attribute:leggings": 1,
+    "check_attribute:red": 6,
+    "check_attribute:blue": 4,
+    "check_attribute:skirt": 3,
+    "check_attribute:white": 1,
+    "check_attribute:gray": 1
+  },
+  "cross_split_translation_duplicates": [],
+  "errors": [],
+  "human_review": "pending",
+  "guardrail_training_started": false,
+  "english_scores_not_turkish_measurements": true,
+  "ready_for_training": false
+}

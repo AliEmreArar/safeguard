@@ -1,0 +1,102 @@
+{
+  "source_dataset": "datasets/person_guardrail_tr_v3_paired_review",
+  "source_split_hashes": {
+    "train": "f41a4caee4d2417a03a96e15d1c5c1d6699ee0660231279f55590380c6c2a189",
+    "validation": "c046cb9625d3f94ac7ed85ccf45016039dbd77dbb3c495871c774bf805562e8e",
+    "test": "324f7b98403e96754550e46aa006fe7216ae3872d585de4d925a18c9ff347195",
+    "challenge": "1157505b1b5ab0e54bed68b862ef3787ab79ba7d60b1d30e2df6fb5461d00548",
+    "legacy_review": "dec102a4e703e4cb3eb7a2ac9f062e1e6cec0202adc698c0889b84dce1751983"
+  },
+  "safe": 3144,
+  "sexual_candidates": 500,
+  "total": 3644,
+  "counts": {
+    "train": {
+      "safe": 2003,
+      "sexual_candidates": 326,
+      "total": 2329
+    },
+    "validation": {
+      "safe": 250,
+      "sexual_candidates": 33,
+      "total": 283
+    },
+    "test": {
+      "safe": 546,
+      "sexual_candidates": 46,
+      "total": 592
+    },
+    "challenge": {
+      "safe": 295,
+      "sexual_candidates": 45,
+      "total": 340
+    },
+    "legacy_review": {
+      "safe": 50,
+      "sexual_candidates": 50,
+      "total": 100
+    }
+  },
+  "pairs": 500,
+  "safe_counterparts": 500,
+  "paired_view_safe": 500,
+  "paired_view_sexual_candidates": 500,
+  "pair_splits": {
+    "train": 326,
+    "validation": 33,
+    "test": 46,
+    "challenge": 45,
+    "legacy_review": 50
+  },
+  "safe_labels": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "safe_label_mask": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "positive_labels_are_proposed": true,
+  "human_review": "sexual_candidates_pending",
+  "ready_for_training": false,
+  "masked_bce_required": true,
+  "source_matched_pairs_are_not_all_verified_strict_minimal_pairs": true,
+  "pair_group_and_split_alignment_verified": true,
+  "adulthood_explicit_on_both_sides": false,
+  "normalized_text_overlap_across_splits": 0,
+  "group_overlap_across_splits": 0,
+  "inherited_duplicate_text_rows": 2,
+  "new_duplicate_text_rows_added": 0,
+  "source_group_is_unverified_filename_prefix": true,
+  "independent_positive_test_available": false,
+  "test_warning": "Legacy query captions were previously used in prompt/style decisions; exposed rows are development evaluation, not independent final test",
+  "training_started": false,
+  "model_api_calls": 0,
+  "run_directory": "results/caption_marker_removed_20261031_180558",
+  "sampling_note": "Paired views reference records already in full splits. Do not concatenate them.",
+  "caption_marker_removed": "yetişkin",
+  "removed_marker_occurrences": 1145,
+  "changed_input_captions": 1145,
+  "remaining_marker_in_caption_fields": 0,
+  "adulthood_evidence_location": "metadata_only",
+  "same_group_equivalent_rows_merged": 323,
+  "age_alignment_added_safe_before_cleanup": 467
+}

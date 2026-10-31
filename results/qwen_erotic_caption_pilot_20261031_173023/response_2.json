@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Tıknaz yapılı yetişkin kadın, arkadan topuz yapılmış koyu saçlarıyla baştan çıkarıcı bir görünüm sergiliyor; koyu mavi kısa kollu üst ve koyu pantolon giyiyor, üst tutamağından tuttuğu koyu merkezli açık gri dikdörtgen çantayı taşıyor."
+      }
+    }
+  ],
+  "created": 1793457024,
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "system_fingerprint": "b1-39febd2ad",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 84,
+    "prompt_tokens": 389,
+    "total_tokens": 473,
+    "prompt_tokens_details": {
+      "cached_tokens": 290
+    }
+  },
+  "id": "chatcmpl-SrqVj6ZkGY0IU4TUUy0bKqqxsR4Sz1Yg",
+  "timings": {
+    "cache_n": 290,
+    "prompt_n": 99,
+    "prompt_ms": 34.138,
+    "prompt_per_token_ms": 0.3448282828282828,
+    "prompt_per_second": 2899.994141425977,
+    "predicted_n": 84,
+    "predicted_ms": 392.299,
+    "predicted_per_token_ms": 4.726493975903614,
+    "predicted_per_second": 211.57331525188695
+  }
+}

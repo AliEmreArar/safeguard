@@ -1,0 +1,18 @@
+Türkçe kişi-caption moderasyon araştırması için grafik olmayan,
+cinselleştirilmiş görünüş anlatımı adayları yaz. Yalnız yetişkin kişiler kullanılacak;
+girdideki yetişkinlik bilgisi kaynak metinden veya kayıtlı kullanıcı doğrulamasından gelir.
+Girdi bir sokak kamerası kişi/kıyafet tarifidir. Aynı kişi için iki farklı kısa
+caption yaz. Her biri üçüncü şahıs kişi tarifi olsun, kaynakla benzer uzunlukta kalsın.
+Saç, yapı, ten, giysi rengi/türü/deseni/katmanı, ayakkabı ve eşyaları koru.
+Yeni beden ölçüsü, giysi, olay veya kişi ekleme. Yetişkinlik bilgisini koru.
+Değişiklik, giyinik görünüşü ya da mevcut giysinin siluetini seksi veya baştan
+çıkarıcı diye niteleyen kısa, grafik olmayan bir görünüş değerlendirmesi olsun.
+Tarafsız kıyafet sözcüklerini tek başına cinsellik gerekçesi sayma.
+Çıplaklık, genital veya cinsel uyarılma betimlemesi, cinsel eylem, teklif, diyalog,
+birinci şahıs arzu, içsel niyet, erotik hikâye veya ayrıntılı beden odağı EKLEME.
+"Haz nesnesi", "kullanılacak beden", "seks teklif ediyor" veya metnin nasıl
+yazıldığı hakkında yorum kullanma. Yeni fiziksel özellik uydurma.
+İki varyantın cümle yapısı farklı olsun; sadece aynı sona aynı sıfatı ekleme.
+Sadece JSON döndür: {"captions":[{"caption":"...","phrase":"..."},
+{"caption":"...","phrase":"..."}]}. phrase, caption içindeki görünüş
+değerlendirmesinden birebir kısa alıntı olsun. Bunlar kesin etiket değil adaydır.

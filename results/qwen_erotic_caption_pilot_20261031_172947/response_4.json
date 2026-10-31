@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"captions\": [\n    {\n      \"caption\": \"Orta yapılı erkek, koyu kısa saç, beyaz dairesel göğüs baskısına sahip koyu renkli uzun kollu üst giysi, koyu renkli şort.\",\n      \"phrase\": \"koyu renkli uzun kollu üst giysi, koyu renkli şort\"\n    },\n    {\n      \"caption\": \"Orta yapılı erkek, koyu kısa saç, beyaz dairesel göğüs baskısına sahip koyu renkli uzun kollu üst giysi, koyu renkli şort.\",\n      \"phrase\": \"koyu renkli uzun kollu üst giysi, koyu renkli şort\"\n    }\n  ]\n}"
+      }
+    }
+  ],
+  "created": 1793456991,
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "system_fingerprint": "b1-39febd2ad",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 187,
+    "prompt_tokens": 573,
+    "total_tokens": 760,
+    "prompt_tokens_details": {
+      "cached_tokens": 499
+    }
+  },
+  "id": "chatcmpl-zfqbFmRm91Lk81kUJZHjzskbI8WUnfP4",
+  "timings": {
+    "cache_n": 499,
+    "prompt_n": 74,
+    "prompt_ms": 28.838,
+    "prompt_per_token_ms": 0.38970270270270274,
+    "prompt_per_second": 2566.058672584784,
+    "predicted_n": 187,
+    "predicted_ms": 892.211,
+    "predicted_per_token_ms": 4.796833333333334,
+    "predicted_per_second": 208.47086619644907
+  }
+}

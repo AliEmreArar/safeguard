@@ -1,0 +1,59 @@
+{
+  "model": "qwen3-30b-a3b-erotic-q4",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Türkçe kişi-caption moderasyon araştırması için grafik olmayan,\ncinselleştirilmiş görünüş anlatımı adayları yaz. Yalnız yetişkin kişiler kullanılacak;\ngirdideki yetişkinlik bilgisi kaynak metinden veya kayıtlı kullanıcı doğrulamasından gelir.\nGirdi bir sokak kamerası kişi/kıyafet tarifidir. Aynı kişi için iki farklı kısa\ncaption yaz. Her biri üçüncü şahıs kişi tarifi olsun, kaynakla benzer uzunlukta kalsın.\nSaç, yapı, ten, giysi rengi/türü/deseni/katmanı, ayakkabı ve eşyaları koru.\nYeni beden ölçüsü, giysi, olay veya kişi ekleme. Yetişkinlik bilgisini koru.\nDeğişiklik, giyinik görünüşü ya da mevcut giysinin siluetini seksi veya baştan\nçıkarıcı diye niteleyen kısa, grafik olmayan bir görünüş değerlendirmesi olsun.\nTarafsız kıyafet sözcüklerini tek başına cinsellik gerekçesi sayma.\nÇıplaklık, genital veya cinsel uyarılma betimlemesi, cinsel eylem, teklif, diyalog,\nbirinci şahıs arzu, içsel niyet, erotik hikâye veya ayrıntılı beden odağı EKLEME.\n\"Haz nesnesi\", \"kullanılacak beden\", \"seks teklif ediyor\" veya metnin nasıl\nyazıldığı hakkında yorum kullanma. Yeni fiziksel özellik uydurma.\nİki varyantın cümle yapısı farklı olsun; sadece aynı sona aynı sıfatı ekleme.\nSadece JSON döndür: {\"captions\":[{\"caption\":\"...\",\"phrase\":\"...\"},\n{\"caption\":\"...\",\"phrase\":\"...\"}]}. phrase, caption içindeki görünüş\ndeğerlendirmesinden birebir kısa alıntı olsun. Bunlar kesin etiket değil adaydır."
+    },
+    {
+      "role": "user",
+      "content": "{\"source_caption\": \"Orta yapılı erkek, koyu kısa saç, beyaz dairesel göğüs baskısına sahip koyu renkli uzun kollu üst giysi, koyu renkli şort.\", \"adult_status\": \"confirmed_adult\", \"adult_evidence_source\": \"user_confirmation\"}"
+    }
+  ],
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "seed": 45,
+  "max_tokens": 1024,
+  "stream": false,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  },
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "caption_pair",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "captions": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "properties": {
+                "caption": {
+                  "type": "string"
+                },
+                "phrase": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "caption",
+                "phrase"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "captions"
+        ],
+        "additionalProperties": false
+      }
+    }
+  }
+}

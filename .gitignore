@@ -11,6 +11,10 @@ __pycache__/
 .run.lock
 *.tmp
 *.log
+*.pid
+.aws/
+.codex/
+.agents/
 models/
 .cache/
 .model-venv/

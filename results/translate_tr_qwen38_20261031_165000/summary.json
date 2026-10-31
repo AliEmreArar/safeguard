@@ -1,0 +1,21 @@
+{
+  "requested": 16,
+  "completed": 16,
+  "newly_translated": 16,
+  "counts": {
+    "train": 4,
+    "validation": 4,
+    "test": 4,
+    "challenge": 4
+  },
+  "seconds_this_session": 50.80221749190241,
+  "new_captions_per_second": 0.3149468820440822,
+  "flagged": 0,
+  "flag_counts": {},
+  "cross_split_translation_duplicates": [],
+  "errors": [],
+  "human_review": "pending",
+  "guardrail_training_started": false,
+  "english_scores_not_turkish_measurements": true,
+  "ready_for_training": false
+}

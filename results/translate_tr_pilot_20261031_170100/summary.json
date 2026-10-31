@@ -1,0 +1,14 @@
+{
+  "requested": 16,
+  "completed": 16,
+  "new_translations": 16,
+  "load_seconds": 4.106624544132501,
+  "generation_seconds": 10.358340709004551,
+  "captions_per_second": 1.5446489403550059,
+  "output_tokens_per_second": 111.21472370556042,
+  "peak_reserved_gib": 9.76953125,
+  "flagged": 1,
+  "human_review": "pending",
+  "guardrail_training_started": false,
+  "english_scores_not_turkish_measurements": true
+}

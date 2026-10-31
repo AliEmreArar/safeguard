@@ -1,0 +1,23 @@
+27098_2.jpg — varyant 1
+Kaynak: Orta yapılı yetişkin kadın, arkadan bağlanmış koyu renkli orta uzunlukta saç. Açık tenli. Uzun kollu gri yuvarlak yakalı üst. Koyu kahverengi pantolon. Açık mavi tabanlı koyu mavi ayakkabı. Kollarında tutamaklarından tutulmuş büyük beyaz bez çanta.
+Önceki: Arkadan bağlanmış koyu renkli orta uzunlukta saçlı, açık tenli, orta yapılı yetişkin kadın; uzun kollu gri yuvarlak yakalı üstü ve koyu kahverengi pantolonu kalçalarının dolgun kıvrımını ortaya çıkarıyor, açık mavi tabanlı koyu mavi ayakkabılar giyiyor ve kollarında büyük beyaz bez çanta tutuyor.
+Qwen: Orta yapılı yetişkin kadın, arkadan bağlanmış koyu renkli orta uzunlukta saçıyla baştan çıkarıcı bir görüntü sunuyor; uzun kollu gri yuvarlak yakalı üst, koyu kahverengi pantolon ve açık mavi tabanlı koyu mavi ayakkabı giyiyor. Kollarında tutamaklarından tutulmuş büyük beyaz bez çanta taşıyor.
+Alıntı: 
+
+27019_2.jpg — varyant 1
+Kaynak: Yetişkin kadın, tıknaz yapılı, arkadan topuz yapılmış koyu saçlar, koyu mavi kısa kollu üst, koyu pantolon, koyu merkezli açık gri dikdörtgen bir çanta taşıyor, üst tutamağından tutuyor.
+Önceki: Yetişkin kadın, tıknaz yapılı, arkadan topuzlu koyu saçlı; koyu mavi kısa kollu üst ve koyu pantolon dolgun hatlarını şehvetli biçimde belirginleştirir. Açık gri, koyu merkezli dikdörtgen çantasını üst tutamağından tutar.
+Qwen: Tıknaz yapılı yetişkin kadın, arkadan topuz yapılmış koyu saçlarıyla baştan çıkarıcı bir görünüm sergiliyor; koyu mavi kısa kollu üst ve koyu pantolon giyiyor, üst tutamağından tuttuğu koyu merkezli açık gri dikdörtgen çantayı taşıyor.
+Alıntı: 
+
+27082_3.jpg — varyant 1
+Kaynak: Orta yapılı, koyu saçlı kadın, koyu mavi uzun kollu dış giysisinin önü açık şekilde, koyu renkli kısa kollu üstün üzerine giyilmiş, açık gri şort, siyah tayt ve beyaz ayakkabı giyiyor.
+Önceki: Yetişkin, orta yapılı ve koyu saçlı kadın; önü açık koyu mavi uzun kollu dış giysisi, koyu kısa kollu üstünü ve açık gri şortunun altında siyah taytla belirginleşen kalça hattını kışkırtıcı biçimde ortaya çıkarır. Beyaz ayakkabı giyer.
+Qwen: Koyu saçlı orta yapılı kadın, açık gri şort, siyah tayt ve beyaz ayakkabıyla koyu mavi uzun kollu giysisinin önünü açık giyerek seksi bir dengede duruyor.
+Alıntı: 
+
+26615_1.jpg — varyant 1
+Kaynak: Orta yapılı erkek, koyu kısa saç, beyaz dairesel göğüs baskısına sahip koyu renkli uzun kollu üst giysi, koyu renkli şort.
+Önceki: Koyu kısa saçlı, orta yapılı yetişkin erkek; beyaz dairesel göğüs baskılı koyu uzun kollu üstü ve koyu renkli şortu, kaslı bacaklarının çekici biçimini belli ediyor.
+Qwen: Orta yapılı erkek, koyu kısa saçlı; koyu renkli uzun kollu üst giysisiyle seksi bir hava yakalıyor; koyu renkli şort giyiyor.
+Alıntı: 
